@@ -2,280 +2,332 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Devine Auto</title>
-  <meta content="" name="description">
-  <meta content="" name="author">
-  <meta content="" name="keywords">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-  <!-- Favicons -->
-  <link href="assets/imgs/logo/Devine Auto logo.png" rel="icon">
-  <!-- Bootstrap CSS -->
-  <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/maintest.css" rel="stylesheet">
+    <title>Devine Auto</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/imgs/logo/Devine Auto logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- layout-design CSS Files -->
+    <link href="assets/layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/layout-design/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/layout-design/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/layout-design/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/layout-design/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/layout-design/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/layout-design/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/layout-design/aos/aos.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/maintest.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header class="init">
-    <!-- nav -->
-    <div class="navbar-default-white navbar-fixed-top">
-      <div class="container-fluid m-5-hor">
-        <div class="row">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top header-transparent">
+        <div class="container-fluid">
 
-          <!-- logo -->
-          <a class="navbar-brand white" href="index.html">
-            <img alt="logo" src="assets/imgs/logo/Devine Auto logo.png">
-          </a>
+            <div class="row justify-content-center">
+                <div class="col-xl-11 d-flex align-items-center">
+                    <a href="index.html" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt=""
+                            class="img-fluid"></a>
 
-          <!-- menu mobile -->
-          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span>
-            <span class="icon icon-bar"></span></button>
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <!-- <li><a href="#about">About Us</a></li>
+                            <li><a href="#projects">Projects</a></li> -->
+                            <li><a href="#contact">Contact</a></li>
 
-          <!-- main menu start -->
-          <div class="white menu-media" id="main-menu">
-            <nav id="menu-center">
-              <ul>
-                <li><a class="actived" href="#">Home</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li><a href="contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- main menu End -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="hr-header"></div> -->
         </div>
-      </div>
-      <!-- container -->
-    </div>
-    <!-- nav End -->
-  </header>
-  <!-- slider -->
-  <section class="">
-    <!-- home -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
+    </header>
 
-        <div class="carousel-item active"
-          style="background-image: url('assets/imgs/intro-carousel/slider-01-1920x1050.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">First Slide</h3>
-            <p class="lead">This is a description for the first slide.</p>
-          </div>
-        </div>
+    <!-- ======= Intro Section ======= -->
+    <section id="intro">
+        <div class="intro-container">
+            <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 
-        <div class="carousel-item" style="background-image: url('assets/imgs/intro-carousel/slider-01-1920x1050.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">Second Slide</h3>
-            <p class="lead">This is a description for the second slide.</p>
-          </div>
-        </div>
+                <ol class="carousel-indicators"></ol>
 
-        <div class="carousel-item" style="background-image: url('assets/imgs/intro-carousel/slider-01-1920x1050.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">Third Slide</h3>
-            <p class="lead">This is a description for the third slide.</p>
-          </div>
-        </div>
-      </div>
+                <div class="carousel-inner" role="listbox">
 
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <!-- home end -->
-  </section>
-  <main id="main">
-
-    <!-- Section: About Us-->
-    <section id="about">
-
-    </section>
-    <!-- End Section: About Us -->
-
-    <!-- Section: Projects-->
-    <section id="projects">
-
-    </section>
-    <!-- End Section: Projects -->
-
-    <!-- Section: Contact-->
-    <section id="contact" class="section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h3>Get In Touch</h3>
-        </div>
-
-        <div class="pb-5"></div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8">
-
-              <div class="address mt-30">
-                <div class="col-lg-12">
-
-                  <!-- action="#" -->
-                  <form class="repair-info " id="contact-form" onsubmit="return (validateForm())">
-
-                    <div class="mini-top form-row">
-                      <div class="mini-right col-xl">
-                        <div class="form-heading">
-                          CONTACT DETAILS
+                    <div class="carousel-item active" style="background-image: url(assets/imgs/intro-carousel/2.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">Devine Auto</h2>
+                                <p class="animate__animated animate__fadeInUp">Automotive Experts</p>
+                            </div>
                         </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" />
-                          <!-- <label for="name" class="animated-label">Your Name</label> -->
-                        </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" />
-                        </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="phone" class="form-control" name="phone" id="phone" placeholder="Phone Number" />
-                        </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
-                        </div>
-                      </div>
-
-                      <div class="mini-left col-xl">
-                        <div class="form-heading">
-                          CAR DETAILS
-                        </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="text" class="form-control" name="model" id="model"
-                            placeholder="Car Make/Model" />
-                        </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="text" class="form-control" name="regNo" id="regNo"
-                            placeholder="Vehicle Registration" />
-                        </div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="text" class="form-control" name="year" id="year" placeholder="Year" />
-                        </div>
-                      </div>
                     </div>
 
-                    <div class="mini-bottom  form-row">
-                      <div class="mini-right col-xl">
-                        <div class="form-heading">
-                          UPLOAD PHOTOS
+                    <div class="carousel-item" style="background-image: url(assets/imgs/intro-carousel/3.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">New and Used Cars</h2>
+                                <p class="animate__animated animate__fadeInUp">Explore the vast model range of new and
+                                    used cars
+                                    by widely known manufacturers on our website.</p>
+                            </div>
                         </div>
-                        
-                        <div class="form-sub d-inline-block ">Photo of the ENTIRE car</div>
-                        
-                        <!-- <p class="form-sub ">
-                          Photo of the ENTIRE car
-                        </p> 
-                        <p class="form-sub">
-                          Close-up photo of the damage
-                        </p> -->
-                        <div class="form-group ">
-                          <span class="status"></span>
-                          <input type="file" class="form-control" name="filecar" id="filename"
-                            enctype="multipart/form-data">
-                        </div>
-                      <!-- </div>
-
-                      <div class="mini-left col-xl"> -->
-                        <!-- <div class="form-heading">&nbsp;</div> -->
-                       <div class="form-sub d-inline-block ">Close-up photo of the damage</div>
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <input type="file" class="form-control" name="filedamage" id="fileupload"
-                            enctype="multipart/form-data">
-                        </div>
-                      <!-- </div>
-
-                      <div class="below "> -->
-                        <div class="form-group">
-                          <span class="status"></span>
-                          <textarea type="text" class="form-control" name="message" id="message"
-                            placeholder="Additional Information"></textarea>
-                        </div>
-
-                        <div class="submit">
-                          <span id="status"></span>
-                          <button class="btn btn-primary btn-block">Send</button>
-                        </div>
-                      </div>
                     </div>
 
-                  </form>
+                    <div class="carousel-item" style="background-image: url(assets/imgs/intro-carousel/4.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">New and Used Cars</h2>
+                                <p class="animate__animated animate__fadeInUp">Explore the vast model range of new and
+                                    used cars
+                                    by widely known manufacturers on our website.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(assets/imgs/intro-carousel/5.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">New and Used Cars</h2>
+                                <p class="animate__animated animate__fadeInUp">Explore the vast model range of new and
+                                    used cars
+                                    by widely known manufacturers on our website.</p>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-              </div>
+
+                <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
             </div>
+        </div>
+    </section>
+
+    <main id="main">
 
 
-            <div class="col-lg-4 ">
-              <!-- Google Maps Area -->
 
-              <div class="address mt-30">
-                <i class="icofont-location-arrow icofont-2x"></i>
-                F<span>ind Us</span>:
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.0413996305086!2d28.109875380905976!3d-26.055430363178814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572806f0dbc4b%3A0x6c9e577ea39e8d56!2s15A%20Nola%20Ave%2C%20Buccleuch%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1605595640376!5m2!1sen!2sza"
-                  width="700" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                  tabindex="0"></iframe>
-                <h6>
-                  <div class="pb-5"></div>
-                  <div class="text-blue"> 15D Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090
-                  </div>
-                </h6>
-              </div>
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h3>Get In Touch</h3>
+                </div>
+
+                <div class="pb-5"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+
+                            <div class="address mt-30">
+                                <div class="col-lg-12">
+
+                                    <form method="POST" class="repair-info" action="assets/php/send_mail.php" id="contact-form"
+                                        onsubmit="return (validateForm())" enctype="multipart/form-data">
+
+                                        <div class="mini-top form-row">
+                                            <div class="mini-right col-xl">
+                                                <div class="form-heading">
+                                                    CONTACT DETAILS
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Your Name" />
+                                                    <!-- <span class="status"></span> -->
+                                                    <!-- <label for="name" class="animated-label">Your Name</label> -->
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="email" id="email"
+                                                        placeholder="Your Email" />
+                                                    <!-- <span class="status"></span>  -->
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="phone" class="form-control" name="phone" id="phone"
+                                                        placeholder="Phone Number" />
+                                                    <!-- <span class="status"></span> -->
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                        placeholder="Subject" />
+                                                    <!-- <span class="status"></span>  -->
+                                                </div>
+                                            </div>
+
+                                            <div class="mini-left col-xl">
+                                                <div class="form-heading">
+                                                    CAR DETAILS
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <input type="text" class="form-control" name="model" id="model"
+                                                        placeholder="Car Make/Model" />
+                                                    <!-- <span class="status"></span> -->
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <input type="text" class="form-control" name="regNo" id="regNo"
+                                                        placeholder="Vehicle Registration" />
+                                                    <!-- <span class=" status"></span> -->
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <input type="text" class="form-control" name="year" id="year"
+                                                        placeholder="Year" />
+                                                    <!-- <span class="status"></span>  -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mini-bottom  form-row">
+                                            <div class="mini-right col-xl">
+                                                <div class="form-heading">
+                                                    UPLOAD PHOTOS
+                                                </div>
+                                                <!-- <div class="mini-left col-xl">  -->
+                                                <div class="form-sub ">Photo of the ENTIRE car</div>
+
+                                                <div class="form-group ">
+
+                                                    <input type="file" class="form-control" name="filecar" id="filename">
+                                                    <!-- <span class="status"></span> -->
+                                                </div>
+                                                <!-- </div>
+              
+                                    <div class="mini-left col-xl"> -->
+                                                <!-- <div class="form-heading">&nbsp;</div> -->
+                                                <div class="form-sub ">Close-up photo of the damage</div>
+                                                <div class="form-group">
+
+                                                    <input type="file" class="form-control" name="filedamage"
+                                                        id="filedamage">
+                                                    <!-- <span class="status"></span> -->
+                                                </div>
+                                                <!-- </div>
+              
+                                    <div class="below "> -->
+                                                <div class="form-group">
+
+                                                    <textarea type="text" class="form-control" name="message"
+                                                        id="message" placeholder="Additional Information"></textarea>
+                                                    <!-- <span class="status"></span> -->
+                                                </div>
+
+                                                <div class="submit">
+                                                    <span id="status"></span>
+                                                    <button class="btn btn-primary btn-block">Send</button>
+                                                    <span class="status"></span>
+                                                    <!-- <?php if($status) echo "<p>$status</p>"; ?> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 ">
+                            <!-- Google Maps Area -->
+
+                            <div class="address mt-30">
+                                <i class="icofont-location-arrow icofont-2x"></i>
+                                F<span>ind Us</span>:
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.0413996305086!2d28.109875380905976!3d-26.055430363178814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572806f0dbc4b%3A0x6c9e577ea39e8d56!2s15A%20Nola%20Ave%2C%20Buccleuch%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1605595640376!5m2!1sen!2sza"
+                                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                    tabindex="0"></iframe>
+                                <h6>
+                                    <div class="pb-5"></div>
+                                    <div class="text-blue"> 15D Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090
+                                    </div>
+                                </h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
+        </section><!-- End Contact Section -->
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="container">
+            <div class="row-flex">
+
+                <div class="left-block">
+                    <div class="copyright">
+                        <span><span>&copy; &nbsp; </span>Devine Auto </span>
+                        <span class="year"></span> - All Rights Reserved.
+                    </div>
+
+                    <div class="credits">
+                        Designed by <a href="https://github.com/FimKG">Moloto KA</a>
+                    </div>
+                </div>
+
+                <div class="right-block">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo2">
+                            <img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-      </div>
-    </section>
-    <!-- End Section: Contact -->
+    </footer><!-- End Footer -->
 
-  </main><!-- End #main -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+    <div id="preloader"></div>
+    <!-- <img src="assets/imgs/logo/image001.png" alt="" class="img-fluid"> -->
 
+    <!-- layout-design JS Files -->
+    <script src="assets/layout-design/jquery/jquery.min.js"></script>
+    <script src="assets/layout-design/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/layout-design/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/layout-design/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/layout-design/counterup/counterup.min.js"></script>
+    <script src="assets/layout-design/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/layout-design/venobox/venobox.min.js"></script>
+    <script src="assets/layout-design/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/layout-design/aos/aos.js"></script>
 
-  <!-- Section: Footer-->
+    <!-- Main JS File -->
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js"></script>
 
-  <!-- Section: Footer -->
-
-
-
-  <!-- Main JS File  -->
-  <script src="assets/js/main.js"></script>
-  <!-- JS Files -->
-  <script src="assets/js/jquery/jquery.min.js"></script>
-  <script src="assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/jquery.easing/jquery.easing.min.js"></script>
 </body>
 
 </html>

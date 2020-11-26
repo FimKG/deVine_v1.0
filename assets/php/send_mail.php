@@ -62,28 +62,86 @@ if ($regNo == '') {
     die();
 }
 if ($year == '') {
-        echo "Year cannot be empty.";
+    echo "Year cannot be empty.";
+    die();
+} else {
+    if (is_numeric($year)) {
+        echo "Enter 4 numbers.";
         die();
-    } else {
-        if (is_numeric($year)) {
-            echo "Enter 4 numbers.";
-            die();
+    }
+}
+
+// File validation UPLOAD PHOTOS
+
+if ($_FILES["filecar"]["name"]) {
+    $filename = $_FILES["filecar"]["name"];
+    $source = $_FILES["filecar"]["tmp_name"];
+    $type = $_FILES["filecar"]["type"];
+
+    $name = explode(".", $filename);
+    $accepted_types = array('application/zip', 'application/x-zip-compressed', 'multipart/x-zip', 'application/x-compressed');
+    foreach ($accepted_types as $mime_type) {
+        if ($mime_type == $type) {
+            $okay = true;
+            break;
         }
     }
 
-    // File validation UPLOAD PHOTOS
-
-
-    if ($filecar.files.length == 0) {
-        echo "filecar cannot be empty.";
-        die();
+    $continue = strtolower($name[1]) == 'zip' ? true : false;
+    if (!$continue) {
+        $status = "The file you are trying to upload is not a .zip file. Please try again.";
     }
 
-    if ($filedamage.files.length == 0) {
-       echo "filedamage cannot be empty.";
-        die();
+    $target_path = "/home/var/yoursite/httpdocs/" . $filename;  // change this to the correct site path
+    if (move_uploaded_file($source, $target_path)) {
+        $zip = new ZipArchive();
+        $x = $zip->open($target_path);
+        if ($x === true) {
+            $zip->extractTo("/home/var/yoursite/httpdocs/"); // change this to the correct site path
+            $zip->close();
+
+            unlink($target_path);
+        }
+        $status = "Your .zip file was uploaded and unpacked.";
+    } else {
+        $status = "There was a problem with the upload. Please try again.";
+    }
+}
+// 
+if ($_FILES["filedamage"]["name"]) {
+    $filename = $_FILES["filedamage"]["name"];
+    $source = $_FILES["filedamage"]["tmp_name"];
+    $type = $_FILES["filedamage"]["type"];
+
+    $name = explode(".", $filename);
+    $accepted_types = array('application/zip', 'application/x-zip-compressed', 'multipart/x-zip', 'application/x-compressed');
+    foreach ($accepted_types as $mime_type) {
+        if ($mime_type == $type) {
+            $okay = true;
+            break;
+        }
     }
 
+    $continue = strtolower($name[1]) == 'zip' ? true : false;
+    if (!$continue) {
+        $status = "The file you are trying to upload is not a .zip file. Please try again.";
+    }
+
+    $target_path = "/home/var/yoursite/httpdocs/" . $filename;  // change this to the correct site path
+    if (move_uploaded_file($source, $target_path)) {
+        $zip = new ZipArchive();
+        $x = $zip->open($target_path);
+        if ($x === true) {
+            $zip->extractTo("/home/var/yoursite/httpdocs/"); // change this to the correct site path
+            $zip->close();
+
+            unlink($target_path);
+        }
+        $status = "Your .zip file was uploaded and unpacked.";
+    } else {
+        $status = "There was a problem with the upload. Please try again.";
+    }
+}
 
 if ($message === '') {
     echo "Message cannot be empty.";

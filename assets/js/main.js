@@ -1,4 +1,6 @@
 function validateForm() {
+
+    $('.status').hide();
     // CONTACT DETAILS
     var name = document.getElementById('name').value;
     if (name == "") {
@@ -76,6 +78,9 @@ function validateForm() {
         document.querySelector('.status').innerHTML = "Message cannot be empty";
         return false;
     }
+
+ 
+
 
     document.getElementById('status').innerHTML = "Sending...";
     formData = {
