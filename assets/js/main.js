@@ -23,11 +23,15 @@ function validateForm() {
         document.querySelector('.status').innerHTML = "Phone cannot be empty";
         return false;
     } else {
-        var pno = /^\d{10}$/;
-        if (!phone.value.match(pno)) {
+        if (phone_validate(phone)) {
             document.querySelector('.status').innerHTML = "Enter 10 numbers";
             return true;
         }
+        // var pno = /^\d{10}$/;
+        // if (!phone.value.match(pno)) {
+        //     document.querySelector('.status').innerHTML = "Enter 10 numbers";
+        //     return true;
+        // }
     }
     if (subject == "") {
         document.querySelector('.status').innerHTML = "subject cannot be empty";
@@ -49,8 +53,7 @@ function validateForm() {
         document.querySelector('.status').innerHTML = "Year cannot be empty";
         return false;
     } else {
-        var yer = /^\d{4}$/;
-        if (!year.value.match(yer)) {
+        if (phone_validate(yer)) {
             document.querySelector('.status').innerHTML = "Enter 4 numbers";
             return true;
         }

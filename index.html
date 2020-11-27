@@ -46,6 +46,7 @@
                             <li class="active"><a href="index.html">Home</a></li>
                             <!-- <li><a href="#about">About Us</a></li>-->
                             <li><a href="#projects">Projects</a></li>
+                            <li><a href="#services">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
 
                         </ul>
@@ -65,7 +66,7 @@
 
                 <div class="carousel-inner" role="listbox">
 
-                    <div class="carousel-item active" style="background-image: url(assets/imgs/intro-carousel/2.jpg)">
+                    <div class="carousel-item active" style="background-image: url(assets/imgs/intro-carousel/3.jpg)">
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Devine Auto</h2>
@@ -74,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="carousel-item" style="background-image: url(assets/imgs/intro-carousel/3.jpg)">
+                    <div class="carousel-item" style="background-image: url(assets/imgs/intro-carousel/2.jpg)">
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">New and Used Cars</h2>
@@ -134,6 +135,8 @@
                     <h3>Our Projects</h3>
                 </div>
 
+                <div class="pb-5"></div>
+
                 <div class="card-deck">
                     <div class="card projects-card">
                         <img src="assets/imgs/repaired/Picture1.png" alt="" class="img-responsive">
@@ -169,8 +172,55 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section><!-- End Projects Section -->
 
-        </section><!-- End Contact Section -->
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h3>Our Services</h3>
+                </div>
+                <div class="pb-5"></div>
+
+
+                <div class="card" style="max-width: 564px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 services-card" style="background: #868e96;">
+                            <img src="assets/imgs/s1.jpg" class="card-img-top " alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Engine Overhaul</h5>
+                                <p class="card-text">From the brake pedal to hydraulic
+                                    brake fluid, our technicians can
+                                    perform brake repair on any make
+                                    and model.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="card" style="max-width: 564px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5 services-card" style="background: #868e96;">
+                            <img src="assets/imgs/s1.jpg" class="card-img-top " alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Engine Overhaul</h5>
+                                <p class="card-text">From the brake pedal to hydraulic 
+                                    brake fluid, our technicians can 
+                                    perform brake repair on any make 
+                                    and model.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section><!-- End Services Section -->
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="section-bg">
@@ -182,139 +232,124 @@
 
                 <div class="pb-5"></div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-8">
 
-                            <div class="address mt-30">
-                                <div class="col-lg-12">
+                        <div class="address mt-30">
 
-                                    <form method="POST" class="repair-info" action="assets/php/send_mail.php"
-                                        id="contact-form" onsubmit="return (validateForm())"
-                                        enctype="multipart/form-data">
 
-                                        <div class="mini-top form-row">
-                                            <div class="mini-right col-xl">
-                                                <div class="form-heading">
-                                                    CONTACT DETAILS
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" id="name"
-                                                        placeholder="Your Name" />
-                                                    <!-- <span class="status"></span> -->
-                                                    <!-- <label for="name" class="animated-label">Your Name</label> -->
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="email" id="email"
-                                                        placeholder="Your Email" />
-                                                    <!-- <span class="status"></span>  -->
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="phone" class="form-control" name="phone" id="phone"
-                                                        placeholder="Phone Number" />
-                                                    <!-- <span class="status"></span> -->
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                        placeholder="Subject" />
-                                                    <!-- <span class="status"></span>  -->
-                                                </div>
-                                            </div>
+                            <form method="POST" class="repair-info" action="assets/php/send_mail.php" id="contact-form"
+                                onsubmit="return (validateForm())" enctype="multipart/form-data">
 
-                                            <div class="mini-left col-xl">
-                                                <div class="form-heading">
-                                                    CAR DETAILS
-                                                </div>
-                                                <div class="form-group">
-
-                                                    <input type="text" class="form-control" name="model" id="model"
-                                                        placeholder="Car Make/Model" />
-                                                    <!-- <span class="status"></span> -->
-                                                </div>
-                                                <div class="form-group">
-
-                                                    <input type="text" class="form-control" name="regNo" id="regNo"
-                                                        placeholder="Vehicle Registration" />
-                                                    <!-- <span class=" status"></span> -->
-                                                </div>
-                                                <div class="form-group">
-
-                                                    <input type="text" class="form-control" name="year" id="year"
-                                                        placeholder="Year" />
-                                                    <!-- <span class="status"></span>  -->
-                                                </div>
-                                            </div>
+                                <div class="mini-top form-row">
+                                    <div class="mini-right col-xl">
+                                        <div class="form-heading">
+                                            CONTACT DETAILS
                                         </div>
-
-                                        <div class="mini-bottom  form-row">
-                                            <div class="mini-right col-xl">
-                                                <div class="form-heading">
-                                                    UPLOAD PHOTOS
-                                                </div>
-                                                <!-- <div class="mini-left col-xl">  -->
-                                                <div class="form-sub ">Photo of the ENTIRE car</div>
-
-                                                <div class="form-group ">
-
-                                                    <input type="file" class="form-control" name="filecar"
-                                                        id="filename">
-                                                    <!-- <span class="status"></span> -->
-                                                </div>
-                                                <!-- </div>
-              
-                                    <div class="mini-left col-xl"> -->
-                                                <!-- <div class="form-heading">&nbsp;</div> -->
-                                                <div class="form-sub ">Close-up photo of the damage</div>
-                                                <div class="form-group">
-
-                                                    <input type="file" class="form-control" name="filedamage"
-                                                        id="filedamage">
-                                                    <!-- <span class="status"></span> -->
-                                                </div>
-                                                <!-- </div>
-              
-                                    <div class="below "> -->
-                                                <div class="form-group">
-
-                                                    <textarea type="text" class="form-control" name="message"
-                                                        id="message" placeholder="Additional Information"></textarea>
-                                                    <!-- <span class="status"></span> -->
-                                                </div>
-
-                                                <div class="submit">
-                                                    <span id="status"></span>
-                                                    <button class="btn btn-primary btn-block">Send</button>
-                                                    <span class="status"></span>
-                                                    <!-- <?php if($status) echo "<p>$status</p>"; ?> -->
-                                                </div>
-                                            </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name"
+                                                placeholder="Your Name" />
+                                            <!-- <span class="status"></span> -->
+                                            <!-- <label for="name" class="animated-label">Your Name</label> -->
                                         </div>
-
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-4 ">
-                            <!-- Google Maps Area -->
-
-                            <div class="address mt-30">
-                                <i class="icofont-location-arrow icofont-2x"></i>
-                                F<span>ind Us</span>:
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.0413996305086!2d28.109875380905976!3d-26.055430363178814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572806f0dbc4b%3A0x6c9e577ea39e8d56!2s15A%20Nola%20Ave%2C%20Buccleuch%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1605595640376!5m2!1sen!2sza"
-                                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                                    tabindex="0"></iframe>
-                                <h6>
-                                    <div class="pb-5"></div>
-                                    <div class="text-blue"> 15D Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="email" id="email"
+                                                placeholder="Your Email" />
+                                            <!-- <span class="status"></span>  -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="phone" class="form-control" name="phone" id="phone"
+                                                placeholder="Phone Number" />
+                                            <!-- <span class="status"></span> -->
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" id="subject"
+                                                placeholder="Subject" />
+                                            <!-- <span class="status"></span>  -->
+                                        </div>
                                     </div>
-                                </h6>
-                            </div>
 
+                                    <div class="mini-left col-xl">
+                                        <div class="form-heading">
+                                            CAR DETAILS
+                                        </div>
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" name="model" id="model"
+                                                placeholder="Car Make/Model" />
+                                            <!-- <span class="status"></span> -->
+                                        </div>
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" name="regNo" id="regNo"
+                                                placeholder="Vehicle Registration" />
+                                            <!-- <span class=" status"></span> -->
+                                        </div>
+                                        <div class="form-group">
+
+                                            <input type="text" class="form-control" name="year" id="year"
+                                                placeholder="Year" />
+                                            <!-- <span class="status"></span>  -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mini-right ">
+                                    <div class="form-heading">
+                                        UPLOAD PHOTOS
+                                    </div>
+                                    <!-- <div class="mini-left col-xl">  -->
+                                    <div class="form-sub ">Photo of the ENTIRE car</div>
+
+                                    <div class="form-group ">
+
+                                        <input type="file" class="form-control" name="filecar" id="filename">
+                                        <!-- <span class="status"></span> -->
+                                    </div>
+
+                                    <div class="form-sub ">Close-up photo of the damage</div>
+                                    <div class="form-group">
+
+                                        <input type="file" class="form-control" name="filedamage" id="filedamage">
+                                        <!-- <span class="status"></span> -->
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <textarea type="text" class="form-control" name="message" id="message"
+                                            placeholder="Additional Information"></textarea>
+                                        <!-- <span class="status"></span> -->
+                                    </div>
+
+                                    <div class="submit">
+                                        <span id="status"></span>
+                                        <button class="btn btn-primary btn-block">Send</button>
+                                        <span class="status"></span>
+                                        <!-- <?php if($status) echo "<p>$status</p>"; ?> -->
+                                    </div>
+                                </div>
+
+                            </form>
                         </div>
+                    </div>
+
+                    <div class="col-lg-4 ">
+                        <!-- Google Maps Area -->
+
+                        <div class="address mt-30">
+                            <!-- <i class="icofont-location-arrow icofont-2x"></i> -->
+                            F<span>ind Us</span>:
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.0413996305086!2d28.109875380905976!3d-26.055430363178814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572806f0dbc4b%3A0x6c9e577ea39e8d56!2s15A%20Nola%20Ave%2C%20Buccleuch%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1605595640376!5m2!1sen!2sza"
+                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                            <h6>
+                                <div class="pb-5"></div>
+                                <div class="text-blue"> 15D Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090
+                                </div>
+                            </h6>
+                        </div>
+
                     </div>
                 </div>
 
