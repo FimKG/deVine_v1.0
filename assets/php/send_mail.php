@@ -171,14 +171,14 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = "smt.gmail.com";
 $mail->SMTPAuth = true;
-$mail->Username = "addAddress";
-$mail->Password = "Password";
+$mail->Username = "kgaugelob82@gmail.com";
+$mail->Password = "ArthurKM_@b82";
 $mail->Port = 465;
 $mail->SMTPSecure = "ssl";
 // ============
 $mail->isHTML(true);
 $mail->setFrom($email, $name);
-$mail->addAddress("addAddress");
+$mail->addAddress("kgaugelob82@gmail.com");
 $mail->Subject = ("$email($subject)");
 $mail->Body = $content;
 // ============
@@ -192,7 +192,7 @@ if($mail->send()){
 }
 
 exit();
-// $recipient = "addAddress";
+// $recipient = "kgaugelob82@gmail.com";
 // $mailheader = "From: $email \r\n";
 // mail($recipient, $subject, $content, $mailheader) or die("Error!");
 // echo "Email sent!";

@@ -1,5 +1,5 @@
 /* contact form validation */
-$('.contact-form').on('submit', function (event) {
+$('#contact-form').on('submit', function (event) {
 
     event.preventDefault();
 
@@ -25,14 +25,14 @@ $('.contact-form').on('submit', function (event) {
         document.querySelector('.status').innerHTML = "Phone cannot be empty";
         return false;
 
-    } 
+    }
 
     var subject = document.getElementById('subject').value;
     if (subject == "") {
         document.querySelector('.status').innerHTML = "subject cannot be empty";
         return false;
     }
-    console.log("From: ", name, "\n Email:", email, " \n Phone: ", phone);
+
 
     // CAR DETAILS
     var model = document.getElementById('model').value;
@@ -87,7 +87,7 @@ $('.contact-form').on('submit', function (event) {
         // 'filedamage': $('input[name=filedamage]').val(),
         'model': $('input[name=model]').val(),
         'regNo': $('input[name=regNo]').val(),
-        // 'year': $('input[name=year]').val(),
+        'year': $('input[name=year]').val(),
         'message': $('textarea[name=message]').val()
     };
 
@@ -106,12 +106,13 @@ $('.contact-form').on('submit', function (event) {
     //     }
     // });
 
-    
+
+
     var this_type = $(this),
         url = this_type.attr('action'),
         type = this_type.attr('method'),
         data = formData;
-
+    
     this_type.find('[name]').each(function (index, value) {
         var this_name = $(this),
             name = this_name.attr('name'),
@@ -124,9 +125,12 @@ $('.contact-form').on('submit', function (event) {
         url: url,
         type: type,
         data: data,
-        success: function (response) {
-            console.log(response);
+        success: function (response, data) {
+            console.log('response: ========',response);
+            
+            console.log('data: ========', data);
         }
+        
     });
     return false;
 

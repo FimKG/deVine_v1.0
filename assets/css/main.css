@@ -119,6 +119,9 @@
     left: 40%;
     margin: 0 0 0 -10px;
   }
+  .pre-bg .tel {
+    padding-left: 35px;
+  }
 }
 
 @media (min-width: 1024px) {
