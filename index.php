@@ -439,7 +439,6 @@
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-
                                             <input type="text" class="form-control" name="regNo" id="regNo"
                                                 placeholder="Vehicle Registration" />
                                             <!-- <span class=" status"></span> -->
@@ -457,33 +456,39 @@
                                     <div class="form-heading">
                                         UPLOAD PHOTOS
                                     </div>
-                                    <div class="mini-left">
-
-                                        <div class="form-group mb-2 mr-sm-2">
+                                    <div class="pb-2"></div>
+                                    <div class="mini-left row">
+                                        <div class="col-md-6 mb-3 files" id="up_filecar">
                                             <label class="form-sub ">Photo of the ENTIRE car</label>
-                                            <input type="file" class="form-control" name="filecar" id="filename">
+                                            <ul class="fileList"></ul>
+                                            <input accept="image/*" multiple type="file" class="form-control"
+                                                name="filecar" id="filecar">
                                             <!-- <span class="status"></span> -->
+                                        </div>
+
+                                        <div class="col-md-6 mb-3 files" id="up_filedamage">
+                                            <label class="form-sub ">Close-up photo of the damage</label>
+                                                <ul class="fileList"></ul>
+                                            <input accept="image/*" multiple type="file" class="form-control"
+                                                name="filedamage" id="filedamage">
+                                            <!-- <span class="status"></span>-->
                                         </div>
                                     </div>
 
-                                    <div class="mini-right">
-                                        <div class="form-group mb-2 mr-sm-2">
-                                            <label class="form-sub ">Close-up photo of the damage</label>
-                                            <input type="file" class="form-control" name="filedamage" id="filedamage">
-                                            <!-- <span class="status"></span> -->
-                                        </div>
-                                    </div>
-                                    
                                     <div class="form-group">
-                                        <textarea type="text" class="form-control" name="message" id="message"
+                                        <textarea type="text" rows="3" class="form-control" name="message" id="message"
                                             placeholder="Additional Information"></textarea>
                                         <!-- <span class="status"></span> -->
                                     </div>
 
                                     <div class="submit">
-                                        <span id="status"></span>
-                                        <button class="btn btn-primary btn-block">Send</button>
                                         <span class="status"></span>
+                                        <?php //echo $statusMsg; ?>
+                                        <button class="btn btn-primary btn-block">
+                                            <span id="btnSend">Send </span>
+                                            <span id="status"></span>
+                                            
+                                        </button>
                                     </div>
                                 </div>
 
@@ -505,7 +510,7 @@
                                 tabindex="0"></iframe>
                             <h6>
                                 <div class="pb-3"></div>
-                                <div class="text-blue"> 15D Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090
+                                <div class="text-blue"> 15A Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090
                                 </div>
                             </h6>
                         </div>
@@ -515,30 +520,8 @@
 
             </div>
         </section><!-- End Contact Section -->
-        <!-- <section class="get-in-touch">
-            <h1 class="title">Get in touch</h1>
-            <form class="contact-form row">
-               <div class="form-field col x-50">
-                  <input id="name" class="input-text js-input" type="text" required>
-                  <label class="label" for="name">Name</label>
-               </div>
-               <div class="form-field col x-50">
-                  <input id="email" class="input-text js-input" type="email" required>
-                  <label class="label" for="email">E-mail</label>
-               </div>
-               <div class="form-field col x-100">
-                  <input id="message" class="input-text js-input" type="text" required>
-                  <label class="label" for="message">Message</label>
-               </div>
-               <div class="form-field col x-100 align-center">
-                  <input class="submit-btn" type="submit" value="Submit">
-               </div>
-            </form>
-         </section> -->
 
     </main><!-- End #main -->
-
-
 
     <!-- ======= Pre Footer ======= -->
     <section class="section-bg pre-bg">
@@ -579,7 +562,7 @@
                                 <a href="tel:+27793487630">079 348 7630</a> /
                                 <div class="tel">
                                     &nbsp;T<span>ell</span>:
-                                    <a href="tel:+2711026442">011 026 442</a>
+                                    <a href="tel:+27110264442">011 026 4442</a>
                                 </div>
                             </h6>
                             <h6><i class="icofont-email icofont-2x"></i>&nbsp;E<span>mail</span>:
@@ -624,8 +607,10 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div class="img-preloader"></div>
-    <div id="preloader"></div>
+
+    <div id="preloader">
+        <!-- <div class="img-preloader"></div> -->
+    </div>
 
 
 
@@ -639,8 +624,9 @@
     <script src="assets/layout-design/aos/aos.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/slider.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <!-- <script src="assets/js/test.js"></script> -->
 
 </body>
 
