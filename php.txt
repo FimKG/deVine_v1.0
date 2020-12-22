@@ -1,0 +1,32 @@
+var onFilePicked = function(event) {
+    var input = event.target;
+
+    var file = input.files[0];
+    console.log(file.name);
+  };
+
+
+      function handleFiles() {
+        if (filecar.files.length > 0) {
+            for (const i = 0; i <= filecar.files.length - 1; i++) {
+                const fsize = filecar.files.item(i).size;
+                const file = Math.round((fsize / 1024));
+                // The size of the file. 
+                if (file >= 4096) {
+                    alert(
+                        "File too Big, please select a file less than 4mb");
+                } else if (file < 0) {
+                    alert(
+                        "File too small, please select a different file");
+                } else {
+                    document.getElementById('up_filecar').innerHTML = '<b>'
+                        + file + '</b> KB';
+                }
+            }
+        }
+        console.log(" - ", file);
+        // const selectedFiles = this.files; /* now you can work with the file list */
+        // console.log(selectedFiles);
+    }
+
+    

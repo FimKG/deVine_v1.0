@@ -7,7 +7,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background:rgb(235, 235, 235);
+  background: rgb(235, 235, 235);
   color: rgb(112, 112, 112);
   font-family: "Lato", sans-serif;
 }
@@ -15,7 +15,9 @@ body {
 a {
   color: rgb(36, 205, 152);
   transition: 0.5s;
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: rgb(24, 211, 110);
     outline: none;
     text-decoration: none;
@@ -27,7 +29,12 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -66,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 3px;
     padding-left: 10px;
     a {
-      color: rgb(255,255,254);
+      color: rgb(255, 255, 254);
     }
     img {
       max-height: 40px;
@@ -134,9 +141,19 @@ h1, h2, h3, h4, h5, h6 {
   #intro {
     height: 150vh;
   }
+  
 }
 
 @media only screen and (max-device-width: 640px) {
+  .fileList {
+    display: block;
+  }
+  
+  textarea .message {
+    overflow: hidden;
+    font-size: 14px;
+    display: block;
+  }
   .address {
     iframe {
       width: 100%;
@@ -146,9 +163,15 @@ h1, h2, h3, h4, h5, h6 {
   .address {
     padding-top: 30px;
   }
+  // .repair-info {
+  //   #up_filecar {
+  //     border-right: none;
+  //   }
+  // }
 }
 
 @media (min-width: 768px) {
+
   footer {
     border-top: rgb(248, 108, 1) solid 2px;
     text-align: left;
@@ -171,11 +194,15 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: flex-end;
   }
-  .fileList{
+  .fileList {
     display: block;
   }
-
-
+  
+  textarea .message {
+    overflow: hidden;
+    font-size: 14px;
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -213,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 5%;
     }
   }
+
 }
 
 @media (max-width: 992px) {
@@ -303,7 +331,7 @@ section {
 --------------------------------------------------------------*/
 
 #projects {
-  background: rgb(255,255,254);
+  background: rgb(255, 255, 254);
   background-size: cover;
   padding: 60px 0 40px 0;
 
@@ -312,7 +340,7 @@ section {
     z-index: 10;
   }
   .projects-card {
-    background: rgb(255,255,254);
+    background: rgb(255, 255, 254);
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
@@ -341,7 +369,7 @@ section {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(rgb(255,255,254), 0.281);
+    background: rgba(rgb(255, 255, 254), 0.281);
     z-index: 9;
   }
   .container {
@@ -394,14 +422,14 @@ section {
   &:focus {
     box-shadow: none;
     border-color: rgb(36, 205, 152);
-  } 
+  }
 }
 
-textarea .message{
-    overflow:hidden;
-    font-size:14px;
-    display:block;
-  }
+textarea .message {
+  overflow: hidden;
+  font-size: 14px;
+  display: block;
+}
 
 .btn-primary {
   background: 0 0 #ffffff;
@@ -447,7 +475,7 @@ textarea .message{
     color: rgb(36, 205, 152);
   }
   iframe {
-    width: 600px;
+    width: 100%;
     height: 368px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -460,7 +488,7 @@ textarea .message{
 .pre-bg {
   // background-color: rgba(75, 87, 100, 0.5);
   background-color: rgba(212, 212, 212, 0.5);
-  color: rgb(1,1,1);
+  color: rgb(1, 1, 1);
   .container {
     margin-top: 20px;
   }
@@ -478,7 +506,7 @@ textarea .message{
   .address {
     h6 {
       a {
-        color: rgb(1,1,1);
+        color: rgb(1, 1, 1);
       }
       .tel {
         padding-left: 35px;
@@ -526,7 +554,7 @@ footer {
 
 #footer {
   .credits {
-    color: rgb(1,1,1);
+    color: rgb(1, 1, 1);
     a {
       color: rgb(248, 108, 1);
     }
@@ -557,7 +585,7 @@ footer {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgb(255,255,254);
+  background: rgb(255, 255, 254);
 
   &::before {
     content: "";
@@ -575,7 +603,7 @@ footer {
   }
 }
 
-.img-preloader{
+.img-preloader {
   display: block;
   position: relative;
   left: 50%;
@@ -583,8 +611,8 @@ footer {
   width: 200px;
   height: 200px;
   margin: -100px 0 0 -100px;
-  z-index: 1001;  
-  background-image: url('../imgs/logo/Devine Auto logo.png');
+  z-index: 1001;
+  background-image: url("../imgs/logo/Devine Auto logo.png");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -596,8 +624,8 @@ footer {
 .back-to-top {
   position: fixed;
   display: none;
-  background:rgb(248, 108, 1);
-  color: rgb(255,255,254);
+  background: rgb(248, 108, 1);
+  color: rgb(255, 255, 254);
   width: 44px;
   height: 44px;
   text-align: center;
@@ -610,7 +638,7 @@ footer {
   z-index: 11;
   i {
     padding-top: 12px;
-    color:rgb(255,255,254);
+    color: rgb(255, 255, 254);
   }
 }
 

@@ -39,8 +39,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-xl-11 d-flex align-items-center">
-                    <a href="index.html" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt=""
-                            class="img-fluid"></a>
+                    <a href="index.html" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
@@ -397,8 +396,7 @@
                     <div class="col-lg-7 px-md-5">
                         <div class="form-div mt-30">
                             <!-- action="assets/php/send_mail.php" -->
-                            <form class="repair-info" id="contact-form" action="assets/php/send_mail.php" method="POST"
-                                enctype="multipart/form-data">
+                            <form class="repair-info" id="contact-form" action="assets/php/send_mail.php" method="POST" enctype="multipart/form-data">
 
                                 <div class="mini-top form-row">
                                     <div class="mini-right col-xl">
@@ -406,25 +404,21 @@
                                             CONTACT DETAILS
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name"
-                                                placeholder="Your Name" />
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" />
                                             <!-- <span class="status"></span> -->
                                             <!-- <label for="name" class="animated-label">Your Name</label> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="email" id="email"
-                                                placeholder="Your Email" />
+                                            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" />
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="phone" id="phone"
-                                                placeholder="Phone Number" />
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" />
                                             <!-- pattern="^\d{10}$" required -->
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" id="subject"
-                                                placeholder="Subject" />
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                     </div>
@@ -434,19 +428,16 @@
                                             CAR DETAILS
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="model" id="model"
-                                                placeholder="Car Make/Model" />
+                                            <input type="text" class="form-control" name="model" id="model" placeholder="Car Make/Model" />
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="regNo" id="regNo"
-                                                placeholder="Vehicle Registration" />
+                                            <input type="text" class="form-control" name="regNo" id="regNo" placeholder="Vehicle Registration" />
                                             <!-- <span class=" status"></span> -->
                                         </div>
                                         <div class="form-group">
 
-                                            <input type="text" class="form-control" name="year" id="year"
-                                                placeholder="Year" />
+                                            <input type="text" class="form-control" name="year" id="year" placeholder="Year" />
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                     </div>
@@ -461,33 +452,31 @@
                                         <div class="col-md-6 mb-3 files" id="up_filecar">
                                             <label class="form-sub ">Photo of the ENTIRE car</label>
                                             <ul class="fileList"></ul>
-                                            <input accept="image/*" multiple type="file" class="form-control"
-                                                name="filecar" id="filecar">
+                                            <input accept="image/*" multiple type="file" class="form-control" name="filecar" id="filecar">
                                             <!-- <span class="status"></span> -->
                                         </div>
 
                                         <div class="col-md-6 mb-3 files" id="up_filedamage">
                                             <label class="form-sub ">Close-up photo of the damage</label>
-                                                <ul class="fileList"></ul>
-                                            <input accept="image/*" multiple type="file" class="form-control"
-                                                name="filedamage" id="filedamage">
+                                            <ul class="fileList"></ul>
+                                            <input accept="image/*" multiple type="file" class="form-control" name="filedamage" id="filedamage">
                                             <!-- <span class="status"></span>-->
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea type="text" rows="3" class="form-control" name="message" id="message"
-                                            placeholder="Additional Information"></textarea>
+                                        <textarea type="text" rows="3" class="form-control" name="message" id="message" placeholder="Additional Information"></textarea>
                                         <!-- <span class="status"></span> -->
                                     </div>
 
                                     <div class="submit">
                                         <span class="status"></span>
-                                        <?php //echo $statusMsg; ?>
+                                        <?php //echo $statusMsg; 
+                                        ?>
                                         <button class="btn btn-primary btn-block">
                                             <span id="btnSend">Send </span>
                                             <span id="status"></span>
-                                            
+
                                         </button>
                                     </div>
                                 </div>
@@ -505,9 +494,7 @@
                             <div class="pb-2"></div>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.0413996305086!2d28.109875380905976!3d-26.
                                 055430363178814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572806f0dbc4b%3A0x6c9e577ea39e8d56!2s15A%20Nola%20Ave%2C%20
-                                Buccleuch%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1605595640376!5m2!1sen!2sza"
-                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
+                                Buccleuch%2C%20Sandton%2C%202090!5e0!3m2!1sen!2sza!4v1605595640376!5m2!1sen!2sza" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             <h6>
                                 <div class="pb-3"></div>
                                 <div class="text-blue"> 15A Nola Avenue, Buccleuch, Sandton, <br>Midrand,<br>2090

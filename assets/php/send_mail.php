@@ -73,7 +73,7 @@ if ($year === '') {
     if(in_array($fileType, $allowTypes)){
         // Upload file to the server
         if(move_uploaded_file($_FILES["files"]["tmp_name"], $targetFilePath)){
-            $uploadedFile = $targetFilePath;
+            $uploaded_photos = $targetFilePath;
         }else{
             $uploadStatus = 0;
             $statusMsg = "Sorry, there was an error uploading your file.";
@@ -93,6 +93,7 @@ if ($message === '') {
     echo "Message cannot be empty.";
 }
 
+$uploaded_photos = $model .' and ' .$regNo . 'Images not found request via email';
 // $content = "From: $name \n Email: $email \n 
 // Phone: $phone \n Model: $model \n Vehicle Registration: $regNo \n 
 // Year: $year \n Entire Car: $filecar \n Damaged: $filedamage \n 
@@ -135,14 +136,14 @@ try {
     //$mail->addBCC('bcc@example.com');
     // ====== Attachments ======
     //
-    // $mail->addAttachment('docs/'.$docname);         // Add attachments
+    // $mail->addAttachment('docs/'.$uploaded_photos);         // Add attachments
 
     // ====== Content ======
     $mail->isHTML(true);
     $mail->setFrom("noreply@dvtech.co.za");
     $mail->addAddress("kgaugelob82@gmail.com");
     $mail->Subject = ("$email($subject)");
-    $mail->Body = renderMessage ($email,$message,$phone,$name);
+    $mail->Body = renderMessage ($email, $message, $phone, $name, $model, $regNo, $year, $subject);
     // ============
     // $content = "From: $name \n Email: $email \n 
     // Phone: $phone \n Model: $model \n Vehicle Registration: $regNo \n 
