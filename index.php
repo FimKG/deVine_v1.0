@@ -1,3 +1,6 @@
+<?php
+require_once "assets/php/send_mail.php"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -448,6 +451,7 @@
                                         UPLOAD PHOTOS
                                     </div>
                                     <div class="pb-2"></div>
+                                    <span class="filesToUploader"></span>
                                     <div class="mini-left row">
                                         <div class="col-md-6 mb-3 files" id="up_filecar">
                                             <label class="form-sub ">Photo of the ENTIRE car</label>
@@ -461,6 +465,7 @@
                                             <ul class="fileList"></ul>
                                             <input accept="image/*" multiple type="file" class="form-control" name="filedamage" id="filedamage">
                                             <!-- <span class="status"></span>-->
+                                            
                                         </div>
                                     </div>
 
@@ -471,8 +476,8 @@
 
                                     <div class="submit">
                                         <span class="status"></span>
-                                        <?php //echo $statusMsg; 
-                                        ?>
+                                        <?php //echo $statusMsg; ?>
+                                        <!-- <div id="success" class="alert alert-danger"> <?php //echo $errors; ?></div> -->
                                         <button class="btn btn-primary btn-block">
                                             <span id="btnSend">Send </span>
                                             <span id="status"></span>

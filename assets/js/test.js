@@ -1,91 +1,93 @@
-$.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
-    var fileIdCounter = 0;
 
-    this.closest(".files").change(function (evt) {
-        var output = [];
 
-        for (var i = 0; i < evt.target.files.length; i++) {
-            fileIdCounter++;
-            var file = evt.target.files[i];
-            var fileId = sectionIdentifier + fileIdCounter;
+// $.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
+//     var fileIdCounter = 0;
 
-            filesToUpload.push({
-                id: fileId,
-                file: file
-            });
+//     this.closest(".files").change(function (evt) {
+//         var output = [];
 
-            var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + fileId + "\">Remove</a>";
+//         for (var i = 0; i < evt.target.files.length; i++) {
+//             fileIdCounter++;
+//             var file = evt.target.files[i];
+//             var fileId = sectionIdentifier + fileIdCounter;
 
-            output.push("<li><strong>", escape(file.name), "</strong> - ", file.size, " bytes. &nbsp; &nbsp; ", removeLink, "</li> ");
-        };
+//             filesToUpload.push({
+//                 id: fileId,
+//                 file: file
+//             });
 
-        $(this).children(".fileList")
-            .append(output.join(""));
+//             var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + fileId + "\">Remove</a>";
 
-        //reset the input to null - nice little chrome bug!
-        evt.target.value = null;
-    });
+//             output.push("<li><strong>", escape(file.name), "</strong> - ", file.size, " bytes. &nbsp; &nbsp; ", removeLink, "</li> ");
+//         };
 
-    $(this).on("click", ".removeFile", function (e) {
-        e.preventDefault();
+//         $(this).children(".fileList")
+//             .append(output.join(""));
 
-        var fileId = $(this).parent().children("a").data("fileid");
+//         //reset the input to null - nice little chrome bug!
+//         evt.target.value = null;
+//     });
 
-        // loop through the files array and check if the name of that file matches FileName
-        // and get the index of the match
-        for (var i = 0; i < filesToUpload.length; ++i) {
-            if (filesToUpload[i].id === fileId)
-                filesToUpload.splice(i, 1);
-        }
+//     $(this).on("click", ".removeFile", function (e) {
+//         e.preventDefault();
 
-        $(this).parent().remove();
-    });
+//         var fileId = $(this).parent().children("a").data("fileid");
 
-    this.clear = function () {
-        for (var i = 0; i < filesToUpload.length; ++i) {
-            if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
-                filesToUpload.splice(i, 1);
-        }
+//         // loop through the files array and check if the name of that file matches FileName
+//         // and get the index of the match
+//         for (var i = 0; i < filesToUpload.length; ++i) {
+//             if (filesToUpload[i].id === fileId)
+//                 filesToUpload.splice(i, 1);
+//         }
 
-        $(this).children(".fileList").empty();
-    }
+//         $(this).parent().remove();
+//     });
 
-    return this;
-};
+//     this.clear = function () {
+//         for (var i = 0; i < filesToUpload.length; ++i) {
+//             if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
+//                 filesToUpload.splice(i, 1);
+//         }
 
-(function () {
-    var filesToUpload = [];
+//         $(this).children(".fileList").empty();
+//     }
 
-    var files1Uploader = $("#files1").fileUploader(filesToUpload, "files1");
-    var files2Uploader = $("#files2").fileUploader(filesToUpload, "files2");
+//     return this;
+// };
 
-    $("#uploadBtn").click(function (e) {
-        e.preventDefault();
+// (function () {
+//     var filesToUpload = [];
 
-        var formData = new FormData();
+//     var files1Uploader = $("#files1").fileUploader(filesToUpload, "files1");
+//     var files2Uploader = $("#files2").fileUploader(filesToUpload, "files2");
 
-        for (var i = 0, len = filesToUpload.length; i < len; i++) {
-            formData.append("files", filesToUpload[i].file);
-        }
+//     $("#uploadBtn").click(function (e) {
+//         e.preventDefault();
 
-        $.ajax({
-            url: "http://requestb.in/1k0dxvs1",
-            data: formData,
-            processData: false,
-            contentType: false,
-            type: "POST",
-            success: function (data) {
-                alert("DONE");
+//         var formData = new FormData();
 
-                files1Uploader.clear();
-                files2Uploader.clear();
-            },
-            error: function (data) {
-                alert("ERROR - " + data.responseText);
-            }
-        });
-    });
-})()
+//         for (var i = 0, len = filesToUpload.length; i < len; i++) {
+//             formData.append("files", filesToUpload[i].file);
+//         }
+
+//         $.ajax({
+//             url: "http://requestb.in/1k0dxvs1",
+//             data: formData,
+//             processData: false,
+//             contentType: false,
+//             type: "POST",
+//             success: function (data) {
+//                 alert("DONE");
+
+//                 files1Uploader.clear();
+//                 files2Uploader.clear();
+//             },
+//             error: function (data) {
+//                 alert("ERROR - " + data.responseText);
+//             }
+//         });
+//     });
+// })()
 
 
 
@@ -107,7 +109,7 @@ $.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
 //     }
 //     // File validation UPLOAD PHOTOS
 
-   
+
 
 //     document.getElementById('status').innerHTML = "Sending...";
 //     $('.status').hide();
@@ -146,7 +148,7 @@ $.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
 //         success: function (response, data) {
 //             console.log('response: ========', response);
 
-            
+
 //         },
 //         error: function (xhr,status,error){
 //             console.log('error: ========', error);
