@@ -1,69 +1,61 @@
 // File Counter
-$.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
-    var fileIdCounter = 0;
+// $.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
+//     var fileIdCounter = 0;
 
-    this.closest(".files").change(function (evt) {
-        var output = [];
+//     this.closest(".files").change(function (evt) {
+//         var output = [];
 
-        for (var i = 0; i < evt.target.files.length; i++) {
-            fileIdCounter++;
-            var file = evt.target.files[i];
-            var fileId = sectionIdentifier + fileIdCounter;
+//         for (var i = 0; i < evt.target.files.length; i++) {
+//             fileIdCounter++;
+//             var file = evt.target.files[i];
+//             var fileId = sectionIdentifier + fileIdCounter;
 
-            filesToUpload.push({
-                id: fileId,
-                file: file
-            });
+//             filesToUpload.push({
+//                 id: fileId,
+//                 file: file
+//             });
 
-            var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + fileId + "\">Remove</a>";
+//             var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + fileId + "\">Remove</a>";
 
-            output.push("<li><strong>", escape(file.name), "</strong> &nbsp; - &nbsp; ", removeLink, "</li> ");
-        };
+//             output.push("<li><strong>", escape(file.name), "</strong> &nbsp; - &nbsp; ", removeLink, "</li> ");
+//         };
 
-        $(this).children(".fileList")
-            .append(output.join(""));
+//         $(this).children(".fileList")
+//             .append(output.join(""));
 
-        evt.target.value = null;
-    });
+//         evt.target.value = null;
+//     });
 
-    $(this).on("click", ".removeFile", function (e) {
-        e.preventDefault();
+//     // $(this).on("click", ".removeFile", function (e) {
+//     //     e.preventDefault();
 
-        var fileId = $(this).parent().children("a").data("fileid");
+//     //     var fileId = $(this).parent().children("a").data("fileid");
 
-        for (var i = 0; i < filesToUpload.length; ++i) {
-            if (filesToUpload[i].id === fileId)
-                filesToUpload.splice(i, 1);
-        }
+//     //     for (var i = 0; i < filesToUpload.length; ++i) {
+//     //         if (filesToUpload[i].id === fileId)
+//     //             filesToUpload.splice(i, 1);
+//     //     }
 
-        $(this).parent().remove();
-    });
+//     //     $(this).parent().remove();
+//     // });
 
-    this.clear = function () {
-        for (var i = 0; i < filesToUpload.length; ++i) {
-            if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
-                filesToUpload.splice(i, 1);
-        }
+// //     this.clear = function () {
+// //         for (var i = 0; i < filesToUpload.length; ++i) {
+// //             if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
+// //                 filesToUpload.splice(i, 1);
+// //         }
 
-        $(this).children(".fileList").empty();
-    }
+// //         $(this).children(".fileList").empty();
+// //     }
 
-    // this.addedFiles = function () {
-    //     for (var i = 0; i < filesToUpload.length; ++i) {
-    //         if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
-    //             filesToUpload.splice(i, 1);
-    //     }
+//     return this;
+// };
 
-    //     $(this).children(".fileList").add();
-    // }
-
-    return this;
-};
-
-// DISPLAY UPLOADED PHOTOS 
-var filesToUpload = [];
-var files1Uploader = $("#up_filecar").fileUploader(filesToUpload, "up_filecar");
-var files2Uploader = $("#up_filedamage").fileUploader(filesToUpload, "up_filedamage");
+// // DISPLAY UPLOADED PHOTOS 
+// var filesToUpload = [];
+// var files1Uploader = $("#up_filecar").fileUploader(filesToUpload, "up_filecar");
+// var files2Uploader = $("#up_filedamage").fileUploader(filesToUpload, "up_filedamage");
+$("#btnSend").html("Send");
 
 /* contact form validation */
 $('#contact-form').on('submit', function (event) {
@@ -115,73 +107,59 @@ $('#contact-form').on('submit', function (event) {
             return false;
         }
 
-        // File UPLOAD PHOTOS 
-        // var formData = new FormData();
-        // var filecar = [];
-        if (filesToUpload == "") {
-            document.querySelector('.status').innerHTML = "Please Upload Images";
-            return false;
-        }
+        // File UPLOAD PHOTOS
+        // if (filesToUpload == "") {
+        //     document.querySelector('.status').innerHTML = "Please Upload Images";
+        //     return false;
+        // }
+        
+        // totalUploadFiles = '';
+        // for (var i = 0, len = filesToUpload.length; i < len; i++) {
+        //     // formData.append("name", filesToUpload[i].file);
+        //     filesToUploader = filesToUpload[i].file;
+        //     filelist = filesToUploader.name;
+        //     totalUploadFiles += filelist + ', ';
+        // }
 
-        totalUploadFiles = '';
-        for (var i = 0, len = filesToUpload.length; i < len; i++) {
-            // formData.append("files", filesToUpload[i].file);
-            filesToUploader = filesToUpload[i].file;
-            filelist = filesToUploader.name;
-            totalUploadFiles += filelist + ', ';
-        }// console.log(totalUploadFiles);
+        var filecar = $('#filecar').prop('files');
+        var filedamage = $('#filedamage').prop('files');
 
-       // Message
+        // Message
         var message = document.getElementById('message').value;
         if (message == "") {
             document.querySelector('.status').innerHTML = "Message cannot be empty";
             return false;
         }
-
-        // console.log(" files1Uploader.",  files1Uploader );
+        
+        // Create an FormData object 
+        console.log( new FormData(this));
 
         document.getElementById('status').innerHTML = "Sending...";
         $('.status').hide();
         // $('#btnSend').hide();
-        formData = {
-            'name': $('input[name=name]').val(),
-            'email': $('input[name=email]').val(),
-            'phone': $('input[name=phone]').val(),
-            'subject': $('input[name=subject]').val(),
-            'model': $('input[name=model]').val(),
-            'regNo': $('input[name=regNo]').val(),
-            'year': $('input[name=year]').val(),
-            'filecar': totalUploadFiles,
-            'filedamage': totalUploadFiles,
-            'message': $('textarea[name=message]').val()
-        };
 
-        // console.log(" \n- ", formData, " \n\n\n\n- ");
+        console.log(name, " \n- ", email, " \n- ", phone, " \n- ", subject, " \n- ", model,
+            " \n- ", regNo, " \n- ", year, " \n- ", filecar, " \n- ", filedamage,
+            " \n- ", message);
 
-        // console.log(name, " \n- ", email, " \n- ", phone, " \n- ", subject, " \n- ", model,
-        //     " \n- ", regNo, " \n- ", year, " \n- ", filecar, " \n- ", filedamage, " \n- ", message);
-
-        var this_type = $(this),
-            url = this_type.attr('action'),
-            type = this_type.attr('method'),
-            data = formData;
-
-        this_type.find('[name]').each(function (index, value) {
-            var this_name = $(this),
-                name = this_name.attr('name'),
-                value = this_name.val();
-
-            data[name] = value;
-        });
+        var this_type = $(this)
+        var url = this_type.attr('action')
+        var type = this_type.attr('method')
 
         $.ajax({
-            url: url,
             type: type,
-            data: data,
+            enctype: 'multipart/form-data',
+            url: url,
+            data: new FormData(this),
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
             success: function (data, response, jqXHR) {
-                files1Uploader.clear();
-                files2Uploader.clear();
+                // files1Uploader.clear();
+                // files2Uploader.clear();
                 document.getElementById('status').innerHTML = "";
+
 
                 // console.log('response: ========', response);
                 // console.log('data: ========', data);
@@ -195,7 +173,7 @@ $('#contact-form').on('submit', function (event) {
             }
         });
     } catch (error) {
-        throw new Error(error.message);
+        console.log(error)
     }
     return false;
 });

@@ -419,15 +419,6 @@ footer .right-block {
                                                 <div class="pb"></div>
                                                 <p>Service Type:<a class="details"> '.$subject.'</a></p>
 
-                                                <h3 class="header-sec">UPLOAD PHOTOS</h3>
-                                                <!-- <p class="img-upbg"> -->
-                                                <div class="hr-header">
-                                                    <a class="details">
-                                                        <ul class="fileList"> .$uploaded_photos.</ul>
-                                                    </a>
-                                                </div>
-                                                <!-- </p> -->
-
                                                 <h3 class="header-sec">Message is below </h3>
                                                 <p class="border"><a class="details">'.$message.'</a></p>
                                                 <p>Good luck!</p>

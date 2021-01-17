@@ -66,9 +66,13 @@
 
 //         var formData = new FormData();
 
-//         for (var i = 0, len = filesToUpload.length; i < len; i++) {
-//             formData.append("files", filesToUpload[i].file);
-//         }
+//            // totalUploadFiles = '';
+        // for (var i = 0, len = filesToUpload.length; i < len; i++) {
+        //     formData.append("name", filesToUpload[i].file);
+        //     // filesToUploader = filesToUpload[i].file;
+        //     // filelist = filesToUploader.name;
+        //     // totalUploadFiles += filelist + ', ';
+        // }
 
 //         $.ajax({
 //             url: "http://requestb.in/1k0dxvs1",

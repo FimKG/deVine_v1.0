@@ -1,5 +1,5 @@
 <?php
-require_once "assets/php/send_mail.php"; 
+// require_once "assets/php/send_mail.php"; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -456,14 +456,14 @@ require_once "assets/php/send_mail.php";
                                         <div class="col-md-6 mb-3 files" id="up_filecar">
                                             <label class="form-sub ">Photo of the ENTIRE car</label>
                                             <ul class="fileList"></ul>
-                                            <input accept="image/*" multiple type="file" class="form-control" name="filecar" id="filecar">
+                                            <input type="file" class="form-control" name="filecar[]" id="filecar" accept="image/*" multiple>
                                             <!-- <span class="status"></span> -->
                                         </div>
 
                                         <div class="col-md-6 mb-3 files" id="up_filedamage">
                                             <label class="form-sub ">Close-up photo of the damage</label>
                                             <ul class="fileList"></ul>
-                                            <input accept="image/*" multiple type="file" class="form-control" name="filedamage" id="filedamage">
+                                            <input type="file" class="form-control" name="filedamage[]" id="filedamage" accept="image/*" multiple>
                                             <!-- <span class="status"></span>-->
                                             
                                         </div>
@@ -476,10 +476,11 @@ require_once "assets/php/send_mail.php";
 
                                     <div class="submit">
                                         <span class="status"></span>
+                                        <?php //echo $status; ?>
                                         <?php //echo $statusMsg; ?>
                                         <!-- <div id="success" class="alert alert-danger"> <?php //echo $errors; ?></div> -->
                                         <button class="btn btn-primary btn-block">
-                                            <span id="btnSend">Send </span>
+                                            <span id="btnSend"></span>
                                             <span id="status"></span>
 
                                         </button>
