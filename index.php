@@ -1,5 +1,5 @@
 <?php
-// require_once "assets/php/send_mail.php"; 
+require_once "assets/php/send_mail.php"; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -310,7 +310,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/s1.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S1.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -327,7 +327,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/s1.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S2.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -347,7 +347,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/s1.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S3.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -364,7 +364,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/s1.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S4.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -407,21 +407,21 @@
                                             CONTACT DETAILS
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" />
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" data-form-field="Message"/>
                                             <!-- <span class="status"></span> -->
                                             <!-- <label for="name" class="animated-label">Your Name</label> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" />
+                                            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-form-field="Message"/>
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" />
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-form-field="Message"/>
                                             <!-- pattern="^\d{10}$" required -->
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-form-field="Message"/>
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                     </div>
@@ -431,16 +431,16 @@
                                             CAR DETAILS
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="model" id="model" placeholder="Car Make/Model" />
+                                            <input type="text" class="form-control" name="model" id="model" placeholder="Car Make/Model" data-form-field="Message"/>
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="regNo" id="regNo" placeholder="Vehicle Registration" />
+                                            <input type="text" class="form-control" name="regNo" id="regNo" placeholder="Vehicle Registration" data-form-field="Message"/>
                                             <!-- <span class=" status"></span> -->
                                         </div>
                                         <div class="form-group">
 
-                                            <input type="text" class="form-control" name="year" id="year" placeholder="Year" />
+                                            <input type="text" class="form-control" name="year" id="year" placeholder="Year" data-form-field="Message"/>
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                     </div>
@@ -456,21 +456,21 @@
                                         <div class="col-md-6 mb-3 files" id="up_filecar">
                                             <label class="form-sub ">Photo of the ENTIRE car</label>
                                             <ul class="fileList"></ul>
-                                            <input type="file" class="form-control" name="filecar[]" id="filecar" accept="image/*" multiple>
+                                            <input type="file" class="form-control" name="filecar[]" id="filecar" accept="image/*" multiple data-form-field="Message">
                                             <!-- <span class="status"></span> -->
                                         </div>
 
                                         <div class="col-md-6 mb-3 files" id="up_filedamage">
                                             <label class="form-sub ">Close-up photo of the damage</label>
                                             <ul class="fileList"></ul>
-                                            <input type="file" class="form-control" name="filedamage[]" id="filedamage" accept="image/*" multiple>
+                                            <input type="file" class="form-control" name="filedamage[]" id="filedamage" accept="image/*" multiple data-form-field="Message">
                                             <!-- <span class="status"></span>-->
                                             
                                         </div>
-                                    </div>
+                            </div>
 
                                     <div class="form-group">
-                                        <textarea type="text" rows="3" class="form-control" name="message" id="message" placeholder="Additional Information"></textarea>
+                                        <textarea type="text" rows="3" class="form-control" name="message" id="message" placeholder="Additional Information" data-form-field="Message"></textarea>
                                         <!-- <span class="status"></span> -->
                                     </div>
 
@@ -479,9 +479,9 @@
                                         <?php //echo $status; ?>
                                         <?php //echo $statusMsg; ?>
                                         <!-- <div id="success" class="alert alert-danger"> <?php //echo $errors; ?></div> -->
-                                        <button class="btn btn-primary btn-block">
-                                            <span id="btnSend"></span>
-                                            <span id="status"></span>
+                                        <button class="btn btn-primary btn-block" id="btnSend">Send
+                                            <!-- <span id="btnSend"></span> -->
+                                            <!-- <span id="status"></span> -->
 
                                         </button>
                                     </div>

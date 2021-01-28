@@ -1,62 +1,3 @@
-// File Counter
-// $.fn.fileUploader = function (filesToUpload, sectionIdentifier) {
-//     var fileIdCounter = 0;
-
-//     this.closest(".files").change(function (evt) {
-//         var output = [];
-
-//         for (var i = 0; i < evt.target.files.length; i++) {
-//             fileIdCounter++;
-//             var file = evt.target.files[i];
-//             var fileId = sectionIdentifier + fileIdCounter;
-
-//             filesToUpload.push({
-//                 id: fileId,
-//                 file: file
-//             });
-
-//             var removeLink = "<a class=\"removeFile\" href=\"#\" data-fileid=\"" + fileId + "\">Remove</a>";
-
-//             output.push("<li><strong>", escape(file.name), "</strong> &nbsp; - &nbsp; ", removeLink, "</li> ");
-//         };
-
-//         $(this).children(".fileList")
-//             .append(output.join(""));
-
-//         evt.target.value = null;
-//     });
-
-//     // $(this).on("click", ".removeFile", function (e) {
-//     //     e.preventDefault();
-
-//     //     var fileId = $(this).parent().children("a").data("fileid");
-
-//     //     for (var i = 0; i < filesToUpload.length; ++i) {
-//     //         if (filesToUpload[i].id === fileId)
-//     //             filesToUpload.splice(i, 1);
-//     //     }
-
-//     //     $(this).parent().remove();
-//     // });
-
-// //     this.clear = function () {
-// //         for (var i = 0; i < filesToUpload.length; ++i) {
-// //             if (filesToUpload[i].id.indexOf(sectionIdentifier) >= 0)
-// //                 filesToUpload.splice(i, 1);
-// //         }
-
-// //         $(this).children(".fileList").empty();
-// //     }
-
-//     return this;
-// };
-
-// // DISPLAY UPLOADED PHOTOS 
-// var filesToUpload = [];
-// var files1Uploader = $("#up_filecar").fileUploader(filesToUpload, "up_filecar");
-// var files2Uploader = $("#up_filedamage").fileUploader(filesToUpload, "up_filedamage");
-$("#btnSend").html("Send");
-
 /* contact form validation */
 $('#contact-form').on('submit', function (event) {
 
@@ -108,21 +49,13 @@ $('#contact-form').on('submit', function (event) {
         }
 
         // File UPLOAD PHOTOS
-        // if (filesToUpload == "") {
-        //     document.querySelector('.status').innerHTML = "Please Upload Images";
-        //     return false;
-        // }
-        
-        // totalUploadFiles = '';
-        // for (var i = 0, len = filesToUpload.length; i < len; i++) {
-        //     // formData.append("name", filesToUpload[i].file);
-        //     filesToUploader = filesToUpload[i].file;
-        //     filelist = filesToUploader.name;
-        //     totalUploadFiles += filelist + ', ';
-        // }
-
         var filecar = $('#filecar').prop('files');
         var filedamage = $('#filedamage').prop('files');
+
+        if (filecar == 0 || filedamage == 0) {
+            document.querySelector('.status').innerHTML = "Please Upload Images";
+            return false;
+        }
 
         // Message
         var message = document.getElementById('message').value;
@@ -130,17 +63,25 @@ $('#contact-form').on('submit', function (event) {
             document.querySelector('.status').innerHTML = "Message cannot be empty";
             return false;
         }
-        
+
         // Create an FormData object 
-        console.log( new FormData(this));
+        var formData = new FormData();
+        formData = {
+            'name': $('input[name=name]').val(),
+            'email': $('input[name=email]').val(),
+            'phone': $('input[name=phone]').val(),
+            'subject': $('input[name=subject]').val(),
+            'model': $('input[name=model]').val(),
+            'regNo': $('input[name=regNo]').val(),
+            'year': $('input[name=year]').val(),
+            'filecar': filecar,
+            'filedamage': filedamage,
+            'message': $('textarea[name=message]').val()
+        };
 
-        document.getElementById('status').innerHTML = "Sending...";
-        $('.status').hide();
+        // document.getElementById('status').innerHTML = "Sending...";
+        // $('.status').hide();
         // $('#btnSend').hide();
-
-        console.log(name, " \n- ", email, " \n- ", phone, " \n- ", subject, " \n- ", model,
-            " \n- ", regNo, " \n- ", year, " \n- ", filecar, " \n- ", filedamage,
-            " \n- ", message);
 
         var this_type = $(this)
         var url = this_type.attr('action')
@@ -150,22 +91,49 @@ $('#contact-form').on('submit', function (event) {
             type: type,
             enctype: 'multipart/form-data',
             url: url,
-            data: new FormData(this),
+            data: formData,
             processData: false,
             contentType: false,
             cache: false,
             timeout: 600000,
-            success: function (data, response, jqXHR) {
-                // files1Uploader.clear();
-                // files2Uploader.clear();
-                document.getElementById('status').innerHTML = "";
-
-
-                // console.log('response: ========', response);
-                // console.log('data: ========', data);
-                // console.log('jqXHR: ========', jqXHR);
-
+            beforeSend: function () {
+                $('#btnSend').button('Loding..');
             },
+            // complete: function () {
+            //     $('button#btnSend').button('reset');
+            //     setTimeout(function () {
+            //         $("form#contact-form")[0].reset();
+            //     }, 2000);
+
+            // },
+            success: function (json) {
+                $('.text-danger').remove();
+                // if (json['error']) {
+                //   $('span#success-msg').html('');            
+                //     for (i in json['error']) {
+                //         var element = $('.imput-mail-' + i.replace('_', '-'));
+                //         if ($(element).parent().hasClass('input-group')) {                       
+                //             $(element).parent().after('<div class="text-danger" style="font-size: 14px;">' + json['error'][i] + '</div>');
+                //         } else {
+                //             $(element).after('<div class="text-danger" style="font-size: 14px;">' + json['error'][i] + '</div>');
+                //         }
+                //     }
+                // } else {
+                //   $('span#success-msg').html('<div class="alert alert-success">You have successfully subscribed to the newsletter</div>');
+
+                // }                       
+            },
+            // success: function (data, response, jqXHR) {
+            //     // files1Uploader.clear();
+            //     // files2Uploader.clear();
+            //     document.getElementById('status').innerHTML = "";
+
+
+            //     // console.log('response: ========', response);
+            //     // console.log('data: ========', data);
+            //     // console.log('jqXHR: ========', jqXHR);
+
+            // },
             error: function (errorThrown, response, jqXHR) {
                 // console.log('error: ========', errorThrown);
                 // console.log('error: ========', response);
