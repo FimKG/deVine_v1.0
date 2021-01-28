@@ -79,11 +79,11 @@ $mail = new PHPMailer(true);
 try {
     $mail->SMTPDebug = 2; // Enable verbose debug output
     $mail->isSMTP();
-    $mail->Host = "mail.dvtech.co.za";
+    $mail->Host = "";
     $mail->SMTPAuth = true;
-    $mail->Username = "noreply@dvtech.co.za";
-    $mail->Password = "Devauto@123";
-    $mail->Port = 25;
+    $mail->Username = "a";
+    $mail->Password = "";
+    $mail->Port = ;
     $mail->SMTPSecure = "tls";
     $mail->SMTPOptions = array(
         'ssl' => array(
@@ -96,30 +96,6 @@ try {
     $mail->addReplyTo($email, $name);
     // File validation UPLOAD PHOTOS
     // ====== Attachments ======
-    // $uploads_dir = '/uploads//';
-    // foreach ($filedamage["error"] as $key => $error) {
-    //     if ($error == UPLOAD_ERR_OK) {
-    //         $tmp_name = $filedamage["tmp_name"][$key];
-    //         $file_name = basename($filedamage["name"][$key]);
-    //         $destination_path = getcwd() . DIRECTORY_SEPARATOR;
-    //         $target_path = $destination_path . $uploads_dir . $file_name;
-
-    //         move_uploaded_file($tmp_name, $target_path);
-    //         $mail->addAttachment($target_path);
-    //     }
-    // }
-
-    // foreach ($filecar["error"] as $key => $error) {
-    //     if ($error == UPLOAD_ERR_OK) {
-    //         $tmp_name = $filecar["tmp_name"][$key];
-    //         $file_name = basename($filecar["name"][$key]);
-    //         $destination_path = getcwd() . DIRECTORY_SEPARATOR;
-    //         $target_path = $destination_path . $uploads_dir . $file_name;
-
-    //         move_uploaded_file($tmp_name, $target_path);
-    //         $mail->addAttachment($target_path);
-    //     }
-    // }
     foreach ($filedamage["name"] as $key => $error) {
         $mail->AddAttachment($filedamage["tmp_name"][$key], $filedamage["name"][$key]);
     }
@@ -127,20 +103,16 @@ try {
         $mail->AddAttachment($filecar["tmp_name"][$key], $filecar["name"][$key]);
     }
 
-
     // ====== Content ======
     $mail->isHTML(true);
-    $mail->setFrom("noreply@dvtech.co.za");
-    // $mail->setFrom("Devine Auto <noreply@dvtech.co.za>");
-    $mail->addAddress("molotoka@dvtech.co.za");
-    // $mail->addAddress("mokoenal@dvtech.co.za");
+    $mail->setFrom("");
+    $mail->addAddress("");
     $mail->Subject = ("$email($subject)");
     $mail->Body = renderMessage($email, $message, $phone, $name, $model, $regNo, $year, $subject);
 
-    //$mail->send();
+    $mail->send();
 
     $status = "Email sent!";
-    //     $status = "Email sent!";
 
 } catch (Exception $e) {
 
