@@ -24,12 +24,11 @@ require_once "assets/php/send_mail.php";
     <link href="assets/layout-design/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/layout-design/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/layout-design/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/layout-design/venobox/venobox.css" rel="stylesheet">
     <link href="assets/layout-design/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/layout-design/aos/aos.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/maintest.css" rel="stylesheet">
+    <link href="assets/css/main-nav.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
@@ -41,7 +40,7 @@ require_once "assets/php/send_mail.php";
         <div class="container-fluid">
 
             <div class="row justify-content-center">
-                <div class="col-xl-11 d-flex align-items-center">
+                <div class="col-xl-8 d-flex align-items-center">
                     <a href="index.html" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
@@ -49,7 +48,7 @@ require_once "assets/php/send_mail.php";
                             <li class="active"><a href="index.html">Home</a></li>
                             <!-- <li><a href="#about">About Us</a></li>-->
                             <li><a href="#projects">Projects</a></li>
-                            <li><a href="#services">Projects</a></li>
+                            <li><a href="#services">Services</a></li>
                             <li><a href="#contact">Contact</a></li>
 
                         </ul>
@@ -399,6 +398,7 @@ require_once "assets/php/send_mail.php";
                     <div class="col-lg-7 px-md-5">
                         <div class="form-div mt-30">
                             <!-- action="assets/php/send_mail.php" -->
+                            <!-- <form class="repair-info" id="contact-form" action="test.php" method="POST" enctype="multipart/form-data"> -->
                             <form class="repair-info" id="contact-form" action="assets/php/send_mail.php" method="POST" enctype="multipart/form-data">
 
                                 <div class="mini-top form-row">
@@ -619,7 +619,7 @@ require_once "assets/php/send_mail.php";
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
-    <!-- <script src="assets/js/test.js"></script> -->
+    <!-- <script src="test.js"></script> -->
 
 </body>
 

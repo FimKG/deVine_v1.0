@@ -170,11 +170,6 @@
     $(this).find('p, .btn-get-started , .btn-request-qoute').addClass('animate__animated animate__fadeInUp');
   });
 
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function () {
-    $('.venobox').venobox();
-  });
-
   // Init AOS
   function aos_init() {
     AOS.init({

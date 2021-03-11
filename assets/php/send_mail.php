@@ -77,70 +77,44 @@ require_once "PHPMailer/Exception.php";
 
 $mail = new PHPMailer(true);
 try {
-    $mail->SMTPDebug = 2; // Enable verbose debug output
-    $mail->isSMTP();
-    $mail->Host = "mail.dvtech.co.za";
-    $mail->SMTPAuth = true;
-    $mail->Username = "noreply@dvtech.co.za";
-    $mail->Password = "Devauto@123";
-    $mail->Port = 25;
-    $mail->SMTPSecure = "tls";
-    $mail->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-        )
-    );
-    // Recipients
-    $mail->addReplyTo($email, $name);
-    // File validation UPLOAD PHOTOS
-    // ====== Attachments ======
-    // $uploads_dir = '/uploads//';
-    // foreach ($filedamage["error"] as $key => $error) {
-    //     if ($error == UPLOAD_ERR_OK) {
-    //         $tmp_name = $filedamage["tmp_name"][$key];
-    //         $file_name = basename($filedamage["name"][$key]);
-    //         $destination_path = getcwd() . DIRECTORY_SEPARATOR;
-    //         $target_path = $destination_path . $uploads_dir . $file_name;
-
-    //         move_uploaded_file($tmp_name, $target_path);
-    //         $mail->addAttachment($target_path);
-    //     }
+    // $mail->SMTPDebug = 2; // Enable verbose debug output
+    // $mail->isSMTP();
+    // $mail->Host = "mail.dvtech.co.za";
+    // $mail->SMTPAuth = true;
+    // $mail->Username = "noreply@dvtech.co.za";
+    // $mail->Password = "Devauto@123";
+    // $mail->Port = 25;
+    // $mail->SMTPSecure = "tls";
+    // $mail->SMTPOptions = array(
+    //     'ssl' => array(
+    //         'verify_peer' => false,
+    //         'verify_peer_name' => false,
+    //         'allow_self_signed' => true
+    //     )
+    // );
+    // // Recipients
+    // $mail->addReplyTo($email, $name);
+    // // ====== Attachments ======
+    // foreach ($filedamage["name"] as $key => $error) {
+    //     $mail->AddAttachment($filedamage["tmp_name"][$key], $filedamage["name"][$key]);
     // }
-
-    // foreach ($filecar["error"] as $key => $error) {
-    //     if ($error == UPLOAD_ERR_OK) {
-    //         $tmp_name = $filecar["tmp_name"][$key];
-    //         $file_name = basename($filecar["name"][$key]);
-    //         $destination_path = getcwd() . DIRECTORY_SEPARATOR;
-    //         $target_path = $destination_path . $uploads_dir . $file_name;
-
-    //         move_uploaded_file($tmp_name, $target_path);
-    //         $mail->addAttachment($target_path);
-    //     }
+    // foreach ($filecar["name"] as $key => $error) {
+    //     $mail->AddAttachment($filecar["tmp_name"][$key], $filecar["name"][$key]);
     // }
-    foreach ($filedamage["name"] as $key => $error) {
-        $mail->AddAttachment($filedamage["tmp_name"][$key], $filedamage["name"][$key]);
-    }
-    foreach ($filecar["name"] as $key => $error) {
-        $mail->AddAttachment($filecar["tmp_name"][$key], $filecar["name"][$key]);
-    }
+    // // ====== Content ======
+    // $mail->isHTML(true);
+    // $mail->setFrom("noreply@dvtech.co.za");
+    // // $mail->setFrom("Devine Auto <noreply@dvtech.co.za>");
+    // $mail->addAddress("kgaugelob82@outlook.com");
+    // // $mail->addAddress("molotoka@dvtech.co.za");
+    // // $mail->addAddress("mokoenal@dvtech.co.za");
+    // $mail->Subject = ("$email($subject)");
+    // $mail->Body = renderMessage($email, $message, $phone, $name, $model, $regNo, $year, $subject);
 
-
-    // ====== Content ======
-    $mail->isHTML(true);
-    $mail->setFrom("noreply@dvtech.co.za");
-    // $mail->setFrom("Devine Auto <noreply@dvtech.co.za>");
-    $mail->addAddress("molotoka@dvtech.co.za");
-    // $mail->addAddress("mokoenal@dvtech.co.za");
-    $mail->Subject = ("$email($subject)");
-    $mail->Body = renderMessage($email, $message, $phone, $name, $model, $regNo, $year, $subject);
-
-    //$mail->send();
-
-    $status = "Email sent!";
-    //     $status = "Email sent!";
+    // $mail->send();
+    echo "Email sent!" . $email . "Name: " . $name;
+//    echo "Email sent!";
+    // $status = "Email sent!";
 
 } catch (Exception $e) {
 

@@ -52,7 +52,7 @@ $('#contact-form').on('submit', function (event) {
         var filecar = $('#filecar').prop('files');
         var filedamage = $('#filedamage').prop('files');
 
-        if (filecar == 0 || filedamage == 0) {
+        if (filecar.length == 0 || filedamage.length == 0) {
             document.querySelector('.status').innerHTML = "Please Upload Images";
             return false;
         }
@@ -82,6 +82,7 @@ $('#contact-form').on('submit', function (event) {
         // document.getElementById('status').innerHTML = "Sending...";
         // $('.status').hide();
         // $('#btnSend').hide();
+        console.log(formData);
 
         var this_type = $(this)
         var url = this_type.attr('action')
@@ -106,12 +107,13 @@ $('#contact-form').on('submit', function (event) {
             //     }, 2000);
 
             // },
-            success: function (json) {
-                $('.text-danger').remove();
+            success: function (json, data) {
+                // console.log(data.data);
+                $('.status').remove();
                 // if (json['error']) {
                 //   $('span#success-msg').html('');            
                 //     for (i in json['error']) {
-                //         var element = $('.imput-mail-' + i.replace('_', '-'));
+                //         var element = $('.input-mail-' + i.replace('_', '-'));
                 //         if ($(element).parent().hasClass('input-group')) {                       
                 //             $(element).parent().after('<div class="text-danger" style="font-size: 14px;">' + json['error'][i] + '</div>');
                 //         } else {
