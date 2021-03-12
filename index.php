@@ -1,5 +1,5 @@
 <?php
-require_once "assets/php/send_mail.php"; 
+require_once "assets/php/send_mail.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,11 +41,11 @@ require_once "assets/php/send_mail.php";
 
             <div class="row justify-content-center">
                 <div class="col-xl-8 d-flex align-items-center">
-                    <a href="index.html" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="#">Home</a></li>
                             <!-- <li><a href="#about">About Us</a></li>-->
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
@@ -73,6 +73,7 @@ require_once "assets/php/send_mail.php";
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Devine Auto</h2>
                                 <p class="animate__animated animate__fadeInUp">Automotive Experts</p>
+                                <a href="#contact" class="btn-request-qoute animate__animated animate__fadeInUp">Request Qoute</a>
                             </div>
                         </div>
                     </div>
@@ -138,160 +139,29 @@ require_once "assets/php/send_mail.php";
                 </div>
 
                 <div class="pb-5"></div>
+                
+                <div class="slider-deck">
+                    <p class="head-line">Our previous Clients</p>
+                    <div class="inner-deck">
+                        <div class="projects-deck">
 
-                <!-- <div class="row">
-                    <div class="col-6">
-                        <h3 class="mb-3">Previous Work Done  Change to video slider</h3>
-                    </div>
-                    <div class="col-6 text-right">
-                        <a class="btn  mb-3 mr-1" href="#introCarousel2" role="button" data-slide="prev">
-                            <i class="fa fa-arrow-left"></i>
-                        </a>
-                        <a class="btn  mb-3 " href="#introCarousel2" role="button" data-slide="next">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <div id="introCarousel2" class="carousel slide" data-ride="carousel">
+                            <div class="deck">
+                                <div class="projects-card">
+                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
 
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card  projects-card">
-                                                <img src="assets/imgs/repaired/Picture1.png" alt=""
-                                                    class="img-responsive">
-                                                <img src="assets/imgs/repaired/Picture2.png" alt=""
-                                                    class="img-responsive">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Special title treatment</h4>
-                                                    <p class="card-text">With supporting text below as a natural lead-in
-                                                        to additional content.</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card  projects-card">
-                                                <img src="assets/imgs/repaired/Picture3.png" alt=""
-                                                    class="img-responsive">
-                                                <img src="assets/imgs/repaired/Picture4.png" alt=""
-                                                    class="img-responsive">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Special title treatment</h4>
-                                                    <p class="card-text">With supporting text below as a natural lead-in
-                                                        to additional content.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card projects-card">
-                                                <img src="assets/imgs/repaired/Picture5.png" alt=""
-                                                    class="img-responsive">
-                                                <img src="assets/imgs/repaired/Picture6.png" alt=""
-                                                    class="img-responsive">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Special title treatment</h4>
-                                                    <p class="card-text">With supporting text below as a natural lead-in
-                                                        to additional content.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="row">
-
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card projects-card">
-                                                <img src="assets/imgs/repaired/Picture3.png" alt=""
-                                                    class="img-responsive">
-                                                <img src="assets/imgs/repaired/Picture4.png" alt=""
-                                                    class="img-responsive">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Special title treatment</h4>
-                                                    <p class="card-text">With supporting text below as a natural lead-in
-                                                        to additional content.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card projects-card">
-                                                <img src="assets/imgs/repaired/Picture5.png" alt=""
-                                                    class="img-responsive">
-                                                <img src="assets/imgs/repaired/Picture6.png" alt=""
-                                                    class="img-responsive">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Special title treatment</h4>
-                                                    <p class="card-text">With supporting text below as a natural lead-in
-                                                        to additional content.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-4 mb-3">
-                                            <div class="card projects-card">
-                                                <img src="assets/imgs/repaired/Picture1.png" alt=""
-                                                    class="img-responsive">
-                                                <img src="assets/imgs/repaired/Picture2.png" alt=""
-                                                    class="img-responsive">
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Special title treatment</h4>
-                                                    <p class="card-text">With supporting text below as a natural lead-in
-                                                        to additional content.</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="body">
+                                        <h5 class="title">BEFORE & AFTER</h5>
+                                        <p class="text">At our car repair center, you can also buy any accessories you
+                                            need for your vehicle, including car tires and filters..</p>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> -->
-                <div class="card-deck">
-                    <div class="card projects-card">
-                        <img src="assets/imgs/repaired/Picture1.png" alt="" class="img-responsive">
-                        <img src="assets/imgs/repaired/Picture2.png" alt="" class="img-responsive">
-                        <div class="card-body">
-                            <h5 class="card-title">BEFORE & AFTER</h5>
-                            <p class="card-text">At our car repair center, you can also buy any accessories you
-                                need for your vehicle, including car tires and filters.</p>
 
-                        </div>
-                    </div>
-
-                    <div class="card projects-card">
-                        <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
-                        <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
-
-                        <div class="card-body">
-                            <h5 class="card-title">BEFORE & AFTER</h5>
-                            <p class="card-text">At our car repair center, you can also buy any accessories you
-                                need for your vehicle, including car tires and filters..</p>
-
-                        </div>
-                    </div>
-
-                    <div class="card projects-card">
-                        <img src="assets/imgs/repaired/Picture5.png" alt="" class="img-responsive">
-                        <img src="assets/imgs/repaired/Picture6.png" alt="" class="img-responsive">
-                        <div class="card-body">
-                            <h5 class="card-title">BEFORE & AFTER</h5>
-                            <p class="card-text">At our car repair center, you can also buy any accessories you
-                                need for your vehicle, including car tires and filters.</p>
-
-                        </div>
                     </div>
                 </div>
-
-            </div>
         </section><!-- End Projects Section -->
 
         <!-- ======= Services Section ======= -->
@@ -407,21 +277,21 @@ require_once "assets/php/send_mail.php";
                                             CONTACT DETAILS
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" data-form-field="Message" />
                                             <!-- <span class="status"></span> -->
                                             <!-- <label for="name" class="animated-label">Your Name</label> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-form-field="Message" />
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-form-field="Message" />
                                             <!-- pattern="^\d{10}$" required -->
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-form-field="Message" />
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                     </div>
@@ -431,16 +301,16 @@ require_once "assets/php/send_mail.php";
                                             CAR DETAILS
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="model" id="model" placeholder="Car Make/Model" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="model" id="model" placeholder="Car Make/Model" data-form-field="Message" />
                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="regNo" id="regNo" placeholder="Vehicle Registration" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="regNo" id="regNo" placeholder="Vehicle Registration" data-form-field="Message" />
                                             <!-- <span class=" status"></span> -->
                                         </div>
                                         <div class="form-group">
 
-                                            <input type="text" class="form-control" name="year" id="year" placeholder="Year" data-form-field="Message"/>
+                                            <input type="text" class="form-control" name="year" id="year" placeholder="Year" data-form-field="Message" />
                                             <!-- <span class="status"></span>  -->
                                         </div>
                                     </div>
@@ -465,9 +335,9 @@ require_once "assets/php/send_mail.php";
                                             <ul class="fileList"></ul>
                                             <input type="file" class="form-control" name="filedamage[]" id="filedamage" accept="image/*" multiple data-form-field="Message">
                                             <!-- <span class="status"></span>-->
-                                            
+
                                         </div>
-                            </div>
+                                    </div>
 
                                     <div class="form-group">
                                         <textarea type="text" rows="3" class="form-control" name="message" id="message" placeholder="Additional Information" data-form-field="Message"></textarea>
@@ -476,9 +346,12 @@ require_once "assets/php/send_mail.php";
 
                                     <div class="submit">
                                         <span class="status"></span>
-                                        <?php //echo $status; ?>
-                                        <?php //echo $statusMsg; ?>
-                                        <!-- <div id="success" class="alert alert-danger"> <?php //echo $errors; ?></div> -->
+                                        <?php //echo $status; 
+                                        ?>
+                                        <?php //echo $statusMsg; 
+                                        ?>
+                                        <!-- <div id="success" class="alert alert-danger"> <?php //echo $errors; 
+                                                                                            ?></div> -->
                                         <button class="btn btn-primary btn-block" id="btnSend">Send
                                             <!-- <span id="btnSend"></span> -->
                                             <!-- <span id="status"></span> -->
@@ -559,7 +432,8 @@ require_once "assets/php/send_mail.php";
                                 </div>
                             </h6>
                             <h6><i class="icofont-email icofont-2x"></i>&nbsp;E<span>mail</span>:
-                                <a href="mailto:mokoenal@dvtech.co.za">mokoenaL@<span>dvtech.co.za</span></a> </h6>
+                                <a href="mailto:mokoenal@dvtech.co.za">mokoenaL@<span>dvtech.co.za</span></a>
+                            </h6>
                         </div>
                     </div>
                 </div>

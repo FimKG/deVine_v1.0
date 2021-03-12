@@ -86,6 +86,25 @@ h6 {
   border-bottom: #b4ff00 solid 2px;
 }
 
+.carousel-item {
+    // background-color: rgba(255, 255 0, 1.0);
+  
+  p {
+    font-size: 20px;
+  }
+}
+
+.btn-request-qoute {
+  background-color: rgb(231, 245, 243);
+  font-size: 18px;
+  color: rgb(248, 108, 1);
+  transition: 0.5s;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 8px 32px;
+  border-radius: 50px;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -136,14 +155,13 @@ h6 {
   #intro {
     height: 150vh;
   }
-  
 }
 
 @media only screen and (max-device-width: 640px) {
   .fileList {
     display: block;
   }
-  
+
   textarea .message {
     overflow: hidden;
     font-size: 14px;
@@ -166,7 +184,6 @@ h6 {
 }
 
 @media (min-width: 768px) {
-
   footer {
     border-top: rgb(248, 108, 1) solid 2px;
     text-align: left;
@@ -192,7 +209,7 @@ h6 {
   .fileList {
     display: block;
   }
-  
+
   textarea .message {
     overflow: hidden;
     font-size: 14px;
@@ -235,7 +252,6 @@ h6 {
       width: 5%;
     }
   }
-
 }
 
 @media (max-width: 992px) {
@@ -327,6 +343,7 @@ section {
 
 #projects {
   background: rgb(255, 255, 254);
+  color: #13547a;
   background-size: cover;
   padding: 60px 0 40px 0;
 
@@ -334,16 +351,40 @@ section {
     position: relative;
     z-index: 10;
   }
-  .projects-card {
-    background: rgb(255, 255, 254);
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-    margin-bottom: 20px;
-    img {
-      width: 100%;
-      height: 35%;
-      object-fit: cover;
-      border-radius: 4px 4px 0 0;
+  // .projects-card {
+  //   background: rgb(255, 255, 254);
+  //   border-radius: 0 0 4px 4px;
+  //   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  //   margin-bottom: 20px;
+  //   img {
+  //     width: 100%;
+  //     height: 35%;
+  //     object-fit: cover;
+  //     border-radius: 4px 4px 0 0;
+  //   }
+  // }
+
+  .slider-deck{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:#000;
+    .head-line{
+      font-size: 20px;
+      border-bottom: #13547a solid 3px;
+    }
+    .inner-deck{
+      display: block;
+      overflow: hidden;
+      margin: 0 auto;
+      .projects-deck{
+        img{
+          width: 480px;
+          height: 210px;
+        }
+        // .card-deck{}
+      }
     }
   }
 }
@@ -353,8 +394,9 @@ section {
 --------------------------------------------------------------*/
 
 #services {
-  background: url("../imgs/intro-carousel/1.jpg") center top no-repeat fixed;
-  background-size: cover;
+  background: url("../imgs/intro-carousel/1.jpg") center  no-repeat fixed;
+  // background-size: cover;
+  // object-fit: contain;
   padding: 60px 0 40px 0;
   position: relative;
   &::before {
