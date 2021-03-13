@@ -1,6 +1,3 @@
-<?php
-require_once "assets/php/send_mail.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +15,7 @@ require_once "assets/php/send_mail.php";
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
 
+    <link rel="stylesheet" type="text/css" href="assets/layout-design/glider.min.css">
     <!-- layout-design CSS Files -->
     <link href="assets/layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/layout-design/icofont/icofont.min.css" rel="stylesheet">
@@ -45,7 +43,7 @@ require_once "assets/php/send_mail.php";
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             <!-- <li><a href="#about">About Us</a></li>-->
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
@@ -54,8 +52,6 @@ require_once "assets/php/send_mail.php";
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-                    
-                           
 
                 </div>
                  <a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
@@ -165,7 +161,7 @@ require_once "assets/php/send_mail.php";
                 <div class="pb-5"></div>
                 
                 
-                <div class="slider-deck">
+                <div class="glider-contain multiple slider-deck">
                     <p class="head-line">Our previous Clients</p>
                     
                     <div class="inner deck">
@@ -185,6 +181,9 @@ require_once "assets/php/send_mail.php";
                         </ul>
                     </div>
                 </div>
+
+
+                
         </section><!-- End Projects Section -->
 
         <!-- ======= Services Section ======= -->
@@ -503,6 +502,8 @@ require_once "assets/php/send_mail.php";
     </div>
 
 
+
+    <script src="assets/layout-design/glider.min.js"></script>
 
     <!-- layout-design JS Files -->
     <script src="assets/layout-design/jquery/jquery.min.js"></script>

@@ -10,23 +10,23 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/imgs/logo/Devine Auto logo.png" rel="icon">
+    <link href="../imgs/logo/Devine Auto logo.png" rel="icon">
 
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
 
     <!-- layout-design CSS Files -->
-    <link href="layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="layout-design/icofont/icofont.min.css" rel="stylesheet">
-    <link href="layout-design/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="layout-design/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="layout-design/animate.css/animate.min.css" rel="stylesheet">
-    <link href="layout-design/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/layout-design/aos/aos.css" rel="stylesheet">
+    <link href="../layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../layout-design/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../layout-design/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../layout-design/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../layout-design/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../layout-design/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="../layout-design/aos/aos.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/main-nav.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="../css/main-nav.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
 
 </head>
 
@@ -38,17 +38,12 @@
 
             <div class="row justify-content-center">
                 <div class="col-xl-24 d-flex align-items-center">
-                    <a href="#" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
+                    <a href="#" class="logo mr-auto"><img src="../imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="#">Home</a></li>
-                            <!-- <li><a href="#about">About Us</a></li>-->
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#hire">Hibred</a></li>
-                            <li><a href="#sales">Vehicle On Sale</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li class="active"><a href="/">Home</a></li>
+                            <li><a href="/sales">Vehicle On Sale</a></li>
                         </ul>
                     </nav>
                     
@@ -79,7 +74,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S1.jpg" class="card-img-top " alt="">
+                                    <img src="../imgs/S1.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -96,7 +91,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S2.jpg" class="card-img-top " alt="">
+                                    <img src="../imgs/S2.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -116,7 +111,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S3.jpg" class="card-img-top " alt="">
+                                    <img src="../imgs/S3.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -133,7 +128,7 @@
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S4.jpg" class="card-img-top " alt="">
+                                    <img src="../imgs/S4.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
@@ -232,7 +227,7 @@
                 <div class="right-block">
                     <div class="footer-logo">
                         <a href="index.html" class="logo2">
-                            <img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-responsive">
+                            <img src="../imgs/logo/Devine Auto logo.png" alt="" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -251,17 +246,17 @@
 
 
     <!-- layout-design JS Files -->
-    <script src="assets/layout-design/jquery/jquery.min.js"></script>
-    <script src="assets/layout-design/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/layout-design/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/layout-design/counterup/counterup.min.js"></script>
-    <script src="assets/layout-design/venobox/venobox.min.js"></script>
-    <script src="assets/layout-design/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/layout-design/aos/aos.js"></script>
+    <script src="../layout-design/jquery/jquery.min.js"></script>
+    <script src="../layout-design/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../layout-design/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../layout-design/counterup/counterup.min.js"></script>
+    <script src="../layout-design/venobox/venobox.min.js"></script>
+    <script src="../layout-design/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../layout-design/aos/aos.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
     <!-- <script src="test.js"></script> -->
 
 </body>
