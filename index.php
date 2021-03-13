@@ -45,11 +45,11 @@
                         <ul>
                             <li class="active"><a href="/">Home</a></li>
                             <!-- <li><a href="#about">About Us</a></li>-->
-                            <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
-                            <li><a href="#hire">Hibred</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#hire">Hybrid Batteries</a></li>
                             <li><a href="assets/pages/sales.php">Vehicle On Sale</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </nav>
 
@@ -132,74 +132,6 @@
     </section>
 
     <main id="main">
-
-    <!-- <div class="projects-deck"> 
-
- <div class="deck">
-    <div class="projects-card">
-        <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
-        <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
-
-        <div class="body">
-            <h5 class="title">BEFORE & AFTER</h5>
-            <p class="text">At our car repair center, you can also buy any accessories you
-                need for your vehicle, including car tires and filters..</p>
-
-        </div>
-    </div>
-</div>
-</div> -->
-
-        <!-- ======= Projects Section ======= -->
-        <section id="projects" class="section-bg pt-5 pb-5">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h3>Our Projects</h3>
-                </div>
-
-                <div class="pb-5"></div>
-                
-                
-                <div class="slider-deck">
-                    <p class="head-line">Our previous Clients</p>
-                    
-                    <div class="inner deck"> 
-                        <div class="deck-prev"></div>
-                        <div class="deck-next"></div>
-                        <ul>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="glider-contain multiple slider-deck">
-                    <p class="head-line">Our previous Clients</p>
-                    
-                    <div class="glider inner deck">
-                        <div class="deck-prev"></div>
-                        <div class="deck-next"></div>
-                        
-                        <ul>
-                            <li>1<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>2
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>
-                            <li>3<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        
-                            <li>4<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                    <div id="dots" class="glider-dots"></div>
-                </div>
-                </div> -->
-
-
-                
-        </section><!-- End Projects Section -->
 
         <!-- ======= Services Section ======= -->
         <section id="services" class="section-bg">
@@ -290,6 +222,75 @@
 
             </div>
         </section><!-- End Services Section -->
+
+
+    <!-- <div class="projects-deck"> 
+
+ <div class="deck">
+    <div class="projects-card">
+        <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+        <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+
+        <div class="body">
+            <h5 class="title">BEFORE & AFTER</h5>
+            <p class="text">At our car repair center, you can also buy any accessories you
+                need for your vehicle, including car tires and filters..</p>
+
+        </div>
+    </div>
+</div>
+</div> -->
+
+        <!-- ======= Projects Section ======= -->
+        <section id="projects" class="section-bg pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h3>Our Projects</h3>
+                </div>
+
+                <div class="pb-5"></div>
+                
+                
+                <div class="slider-deck">
+                    <p class="head-line">Our previous Clients</p>
+                    
+                    <div class="inner deck"> 
+                        <div class="deck-prev"></div>
+                        <div class="deck-next"></div>
+                        <ul>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="glider-contain multiple slider-deck">
+                    <p class="head-line">Our previous Clients</p>
+                    
+                    <div class="glider inner deck">
+                        <div class="deck-prev"></div>
+                        <div class="deck-next"></div>
+                        
+                        <ul>
+                            <li>1<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>2
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>
+                            <li>3<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        
+                            <li>4<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                    <div id="dots" class="glider-dots"></div>
+                </div>
+                </div> -->
+
+
+                
+        </section><!-- End Projects Section -->
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="section-bg">
