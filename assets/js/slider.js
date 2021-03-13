@@ -12,7 +12,11 @@
       });
     }
   });
-  
+    // Project slider
+    // $('.inner');
+
+
+
   //autosize input textarea
   var textarea = document.querySelector('textarea');
   textarea.addEventListener('keydown', autosize);
@@ -38,6 +42,21 @@
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
+    // request qoute button
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('.btn-qoute-scroll').fadeIn('slow');
+      } else {
+        $('.btn-qoute-scroll').fadeOut('slow');
+      }
+    });
+    $('.btn-qoute-scroll').click(function () {
+      $('html, body').animate({
+        scrollTop: 2100
+      }, 1500, 'easeInOutExpo');
+      return false;
+    });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 17;
@@ -155,7 +174,6 @@
       }
     });
   });
-
   // Intro carousel
   var introCarousel = $(".carousel");
   var introCarouselIndicators = $(".carousel-indicators");
@@ -169,6 +187,8 @@
     $(this).find('h2').addClass('animate__animated animate__fadeInDown');
     $(this).find('p, .btn-get-started , .btn-request-qoute').addClass('animate__animated animate__fadeInUp');
   });
+
+
 
   // Init AOS
   function aos_init() {

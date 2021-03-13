@@ -2,7 +2,7 @@
 # Google Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
+@import url('');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -94,7 +94,7 @@ h6 {
   }
 }
 
-.btn-request-qoute {
+.btn-request-qoute, .btn-qoute-scroll {
   background-color: rgb(231, 245, 243);
   font-size: 18px;
   color: rgb(248, 108, 1);
@@ -103,6 +103,7 @@ h6 {
   margin: 10px;
   padding: 8px 32px;
   border-radius: 50px;
+  scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
@@ -125,6 +126,8 @@ h6 {
     margin-bottom: 30px;
     font-size: 70px;
     font-weight: 700;
+    font-style: italic;
+    transform: skew(-13deg);
   }
   .container {
     text-align: center;
@@ -155,6 +158,12 @@ h6 {
   #intro {
     height: 150vh;
   }
+  // .logo {
+  //   img{
+  //     width: 5px;
+  //     height: 8px;
+  //   }
+  // }
 }
 
 @media only screen and (max-device-width: 640px) {
@@ -176,6 +185,8 @@ h6 {
   .address {
     padding-top: 30px;
   }
+
+
   // .repair-info {
   //   #up_filecar {
   //     border-right: none;
@@ -255,11 +266,14 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  #header {
-    .logo {
-      font-size: 28px;
-    }
-  }
+  // #header {
+  //   // .logo {
+  //   //   img{
+  //   //     width: 5px;
+  //   //     height: 8px;
+  //   //   }
+  //   // }
+  // }
 }
 
 /*--------------------------------------------------------------
@@ -341,53 +355,53 @@ section {
 # Projects Section
 --------------------------------------------------------------*/
 
-#projects {
-  background: rgb(255, 255, 254);
-  color: #13547a;
-  background-size: cover;
-  padding: 60px 0 40px 0;
+// #projects {
+//   background: rgb(255, 255, 254);
+//   color: #13547a;
+//   background-size: cover;
+//   padding: 60px 0 40px 0;
 
-  .container {
-    position: relative;
-    z-index: 10;
-  }
-  // .projects-card {
-  //   background: rgb(255, 255, 254);
-  //   border-radius: 0 0 4px 4px;
-  //   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  //   margin-bottom: 20px;
-  //   img {
-  //     width: 100%;
-  //     height: 35%;
-  //     object-fit: cover;
-  //     border-radius: 4px 4px 0 0;
-  //   }
-  // }
+//   .container {
+//     position: relative;
+//     z-index: 10;
+//   }
+//   // .projects-card {
+//   //   background: rgb(255, 255, 254);
+//   //   border-radius: 0 0 4px 4px;
+//   //   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+//   //   margin-bottom: 20px;
+//   //   img {
+//   //     width: 100%;
+//   //     height: 35%;
+//   //     object-fit: cover;
+//   //     border-radius: 4px 4px 0 0;
+//   //   }
+//   // }
 
-  .slider-deck{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color:#000;
-    .head-line{
-      font-size: 20px;
-      border-bottom: #13547a solid 3px;
-    }
-    .inner-deck{
-      display: block;
-      overflow: hidden;
-      margin: 0 auto;
-      .projects-deck{
-        img{
-          width: 480px;
-          height: 210px;
-        }
-        // .card-deck{}
-      }
-    }
-  }
-}
+//   .slider-deck{
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     text-align: center;
+//     color:#000;
+//     .head-line{
+//       font-size: 20px;
+//       border-bottom: #13547a solid 3px;
+//     }
+//     .inner-deck{
+//       display: block;
+//       overflow: hidden;
+//       margin: 0 auto;
+//       .projects-deck{
+//         img{
+//           width: 480px;
+//           height: 210px;
+//         }
+//         // .card-deck{}
+//       }
+//     }
+//   }
+// }
 
 /*--------------------------------------------------------------
 # Services Section

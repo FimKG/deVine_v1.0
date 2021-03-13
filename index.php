@@ -40,7 +40,7 @@ require_once "assets/php/send_mail.php";
         <div class="container-fluid">
 
             <div class="row justify-content-center">
-                <div class="col-xl-8 d-flex align-items-center">
+                <div class="col-xl-24 d-flex align-items-center">
                     <a href="#" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
@@ -49,11 +49,16 @@ require_once "assets/php/send_mail.php";
                             <!-- <li><a href="#about">About Us</a></li>-->
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
+                            <li><a href="#hire">Hibred</a></li>
+                            <li><a href="assets/pages/sales.php">Vehicle On Sale</a></li>
                             <li><a href="#contact">Contact</a></li>
-
                         </ul>
                     </nav>
+                    
+                           
+
                 </div>
+                 <a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
             </div>
             <!-- <div class="hr-header"></div> -->
         </div>
@@ -71,7 +76,7 @@ require_once "assets/php/send_mail.php";
                     <div class="carousel-item active" style="background-image: url(assets/imgs/intro-carousel/3.jpg)">
                         <div class="carousel-container">
                             <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">Devine Auto</h2>
+                                <h2 class="animate__animated animate__fadeInDown">deVine Auto</h2>
                                 <p class="animate__animated animate__fadeInUp">Automotive Experts</p>
                                 <a href="#contact" class="btn-request-qoute animate__animated animate__fadeInUp">Request Qoute</a>
                             </div>
@@ -85,6 +90,7 @@ require_once "assets/php/send_mail.php";
                                 <p class="animate__animated animate__fadeInUp">Explore the vast model range of new and
                                     used cars
                                     by widely known manufacturers on our website.</p>
+                                <a href="#contact" class="btn-request-qoute animate__animated animate__fadeInUp">Request Qoute</a>
                             </div>
                         </div>
                     </div>
@@ -96,6 +102,7 @@ require_once "assets/php/send_mail.php";
                                 <p class="animate__animated animate__fadeInUp">Explore the vast model range of new and
                                     used cars
                                     by widely known manufacturers on our website.</p>
+                                <a href="#contact" class="btn-request-qoute animate__animated animate__fadeInUp">Request Qoute</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +114,7 @@ require_once "assets/php/send_mail.php";
                                 <p class="animate__animated animate__fadeInUp">Explore the vast model range of new and
                                     used cars
                                     by widely known manufacturers on our website.</p>
-
+                                <a href="#contact" class="btn-request-qoute animate__animated animate__fadeInUp">Request Qoute</a>
                             </div>
                         </div>
                     </div>
@@ -130,6 +137,23 @@ require_once "assets/php/send_mail.php";
 
     <main id="main">
 
+    <!-- <div class="projects-deck"> 
+
+ <div class="deck">
+    <div class="projects-card">
+        <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+        <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+
+        <div class="body">
+            <h5 class="title">BEFORE & AFTER</h5>
+            <p class="text">At our car repair center, you can also buy any accessories you
+                need for your vehicle, including car tires and filters..</p>
+
+        </div>
+    </div>
+</div>
+</div> -->
+
         <!-- ======= Projects Section ======= -->
         <section id="projects" class="section-bg pt-5 pb-5">
             <div class="container" data-aos="fade-up">
@@ -140,26 +164,25 @@ require_once "assets/php/send_mail.php";
 
                 <div class="pb-5"></div>
                 
+                
                 <div class="slider-deck">
                     <p class="head-line">Our previous Clients</p>
-                    <div class="inner-deck">
-                        <div class="projects-deck">
-
-                            <div class="deck">
-                                <div class="projects-card">
-                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
-                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
-
-                                    <div class="body">
-                                        <h5 class="title">BEFORE & AFTER</h5>
-                                        <p class="text">At our car repair center, you can also buy any accessories you
-                                            need for your vehicle, including car tires and filters..</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    
+                    <div class="inner deck">
+                        <div class="deck-prev"></div>
+                        <div class="deck-next"></div>
+                        <ul>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
                     </div>
                 </div>
         </section><!-- End Projects Section -->
