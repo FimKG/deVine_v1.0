@@ -271,7 +271,7 @@
     border: 3px solid #B4FF00;
     cursor: pointer;
   }
-  .deck > ul > li >img{
+  .deck > ul > li > img{
     background-position: center;
     height: 100%;
     width: 100%;

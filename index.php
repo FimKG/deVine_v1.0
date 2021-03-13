@@ -161,26 +161,41 @@
                 <div class="pb-5"></div>
                 
                 
-                <div class="glider-contain multiple slider-deck">
+                <div class="slider-deck">
                     <p class="head-line">Our previous Clients</p>
                     
-                    <div class="inner deck">
+                    <div class="inner deck"> 
                         <div class="deck-prev"></div>
                         <div class="deck-next"></div>
                         <ul>
                             <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>
                             <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>
                             <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>
                             <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
                         </ul>
                     </div>
                 </div>
+                <!-- <div class="glider-contain multiple slider-deck">
+                    <p class="head-line">Our previous Clients</p>
+                    
+                    <div class="glider inner deck">
+                        <div class="deck-prev"></div>
+                        <div class="deck-next"></div>
+                        
+                        <ul>
+                            <li>1<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>2
+                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                        <ul>
+                            <li>3<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        
+                            <li>4<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+                        </ul>
+                    <div id="dots" class="glider-dots"></div>
+                </div>
+                </div> -->
 
 
                 
