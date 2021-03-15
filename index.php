@@ -14,9 +14,10 @@
 
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
-
-    <link rel="stylesheet" type="text/css" href="assets/layout-design/glider.min.css">
     <!-- layout-design CSS Files -->
+    <link href="assets/layout-design/glide.core.min.css" rel="stylesheet">
+    <link href="assets/layout-design/glide.theme.min.css" rel="stylesheet">
+
     <link href="assets/layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/layout-design/icofont/icofont.min.css" rel="stylesheet">
     <link href="assets/layout-design/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -54,7 +55,7 @@
                     </nav>
 
                 </div>
-                 <a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
+                <a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
             </div>
             <!-- <div class="hr-header"></div> -->
         </div>
@@ -224,7 +225,7 @@
         </section><!-- End Services Section -->
 
 
-    <!-- <div class="projects-deck"> 
+        <!-- <div class="projects-deck"> 
 
  <div class="deck">
     <div class="projects-card">
@@ -250,46 +251,105 @@
                 </div>
 
                 <div class="pb-5"></div>
-                
-                
-                <div class="slider-deck">
-                    <p class="head-line">Our previous Clients</p>
-                    
-                    <div class="inner deck"> 
-                        <div class="deck-prev"></div>
-                        <div class="deck-next"></div>
-                        <ul>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
+
+                <p class="head-line">Our previous Clients</p>
+
+                <div class="images glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+
+                                <div class="card-deck">
+                                    <div class="card projects-card">
+                                        <img src="assets/imgs/repaired/Picture1.png" alt="" class="img-responsive">
+                                        <img src="assets/imgs/repaired/Picture2.png" alt="" class="img-responsive">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BEFORE &amp; AFTER</h5>
+                                            <p class="card-text">At our car repair center, you can also buy any accessories you
+                                                need for your vehicle, including car tires and filters.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="card projects-card pj1">
+                                    <img src="assets/imgs/repaired/Picture5.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture6.png" alt="" class="img-responsive">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BEFORE &amp; AFTER</h5>
+                                        <p class="card-text">At our car repair center, you can also buy any accessories you
+                                            need for your vehicle, including car tires and filters.</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="card projects-card">
+                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">BEFORE &amp; AFTER</h5>
+                                        <p class="card-text">At our car repair center, you can also buy any accessories you
+                                            need for your vehicle, including car tires and filters..</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="card projects-card">
+                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">BEFORE &amp; AFTER</h5>
+                                        <p class="card-text">At our car repair center, you can also buy any accessories you
+                                            need for your vehicle, including car tires and filters..</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="card projects-card">
+                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">BEFORE &amp; AFTER</h5>
+                                        <p class="card-text">At our car repair center, you can also buy any accessories you
+                                            need for your vehicle, including car tires and filters..</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="card projects-card">
+                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">BEFORE &amp; AFTER</h5>
+                                        <p class="card-text">At our car repair center, you can also buy any accessories you
+                                            need for your vehicle, including car tires and filters..</p>
+                                    </div>
+                                </div>
+
+                            </li>
                         </ul>
                     </div>
-                </div>
-                <!-- <div class="glider-contain multiple slider-deck">
-                    <p class="head-line">Our previous Clients</p>
-                    
-                    <div class="glider inner deck">
-                        <div class="deck-prev"></div>
-                        <div class="deck-next"></div>
-                        
-                        <ul>
-                            <li>1<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>2
-                            <li><img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                        <ul>
-                            <li>3<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        
-                            <li>4<img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive"></li>
-                        </ul>
-                    <div id="dots" class="glider-dots"></div>
-                </div>
-                </div> -->
 
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-arrow-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
 
-                
         </section><!-- End Projects Section -->
 
         <!-- ======= Contact Section ======= -->
@@ -517,11 +577,8 @@
         <!-- <div class="img-preloader"></div> -->
     </div>
 
-
-
-    <script src="assets/layout-design/glider.min.js"></script>
-
     <!-- layout-design JS Files -->
+    <script src="assets/layout-design/glide.min.js"></script>
     <script src="assets/layout-design/jquery/jquery.min.js"></script>
     <script src="assets/layout-design/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/layout-design/jquery.easing/jquery.easing.min.js"></script>
@@ -534,7 +591,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
     <!-- <script src="test.js"></script> -->
-
 </body>
 
 </html>

@@ -45,7 +45,7 @@
 
     // request qoute button
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
+      if ($(this).scrollTop() > 550) {
         $('.btn-qoute-scroll').fadeIn('slow');
       } else {
         $('.btn-qoute-scroll').fadeOut('slow');
@@ -57,6 +57,15 @@
       }, 1500, 'easeInOutExpo');
       return false;
     });
+
+    // img project clicked
+    $('.glide__slide--active').click(function () {
+      $('html, body').animate({
+        scrollTop: 2100
+      }, 1500, 'easeInOutExpo');
+      return false;
+    });
+
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 17;
@@ -226,4 +235,20 @@
   //      $(this).removeClass('not-empty');
   //   }
   // });
+
+
+  new Glide(".images",{
+    type: 'carousel',
+    perView: 3,
+    focusAt: 'center',
+    gap: 40,
+    breakpoints: {
+      1200:{
+        perView: 3
+      },
+      800:{
+        perView: 2
+      }
+    }
+  }).mount();
 })(jQuery);
