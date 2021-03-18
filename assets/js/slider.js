@@ -194,7 +194,7 @@
 
   introCarousel.on('slid.bs.carousel', function (e) {
     $(this).find('h2').addClass('animate__animated animate__fadeInDown');
-    $(this).find('p, .btn-get-started , .btn-request-qoute').addClass('animate__animated animate__fadeInUp');
+    $(this).find('p, .btn-request-qoute').addClass('animate__animated animate__fadeInUp');
   });
 
 

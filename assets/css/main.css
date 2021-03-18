@@ -80,9 +80,9 @@ h6 {
 }
 
 .btn-request-qoute, .btn-qoute-scroll {
-  background-color: #e7f5f3;
+  background-color: #707070;
   font-size: 18px;
-  color: #f86c01;
+  color: #e7f5f3;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 1px;

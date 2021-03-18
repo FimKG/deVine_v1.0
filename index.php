@@ -275,8 +275,8 @@
                             <li class="glide__slide">
 
                                 <div class="card projects-card pj1">
-                                    <img src="assets/imgs/repaired/Picture5.png" alt="" class="img-responsive">
-                                    <img src="assets/imgs/repaired/Picture6.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
                                     <div class="card-body">
                                         <h5 class="card-title">BEFORE &amp; AFTER</h5>
                                         <p class="card-text">At our car repair center, you can also buy any accessories you
@@ -288,8 +288,8 @@
                             <li class="glide__slide">
 
                                 <div class="card projects-card">
-                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
-                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture5.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture6.png" alt="" class="img-responsive">
 
                                     <div class="card-body">
                                         <h5 class="card-title">BEFORE &amp; AFTER</h5>
@@ -316,8 +316,8 @@
                             <li class="glide__slide">
 
                                 <div class="card projects-card">
-                                    <img src="assets/imgs/repaired/Picture3.png" alt="" class="img-responsive">
-                                    <img src="assets/imgs/repaired/Picture4.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture1.png" alt="" class="img-responsive">
+                                    <img src="assets/imgs/repaired/Picture2.png" alt="" class="img-responsive">
 
                                     <div class="card-body">
                                         <h5 class="card-title">BEFORE &amp; AFTER</h5>
