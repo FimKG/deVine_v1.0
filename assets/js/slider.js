@@ -59,12 +59,12 @@
     });
 
     // img project clicked
-    $('.glide__slide--active').click(function () {
-      $('html, body').animate({
-        scrollTop: 2100
-      }, 1500, 'easeInOutExpo');
-      return false;
-    });
+    // $('.glide__slide--active').click(function () {
+    //   $('html, body').animate({
+    //     scrollTop: 2100
+    //   }, 1500, 'easeInOutExpo');
+    //   return false;
+    // });
 
 
   // Smooth scroll for the navigation menu and links with .scrollto classes

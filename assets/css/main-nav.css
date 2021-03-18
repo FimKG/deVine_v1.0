@@ -4,7 +4,6 @@
 
 /*-- Google Fonts --*/
 
-
 /* #preloader .img-preloader::after {
   content: "";
   position: fixed;
@@ -39,6 +38,12 @@
   position: relative;
   white-space: nowrap;
   padding: 10px 0 10px 100px;
+  margin: auto;
+}
+
+.nav-menu>ul>li:last-child {
+  margin-right: auto;
+  white-space: nowrap;
 }
 
 .nav-menu a {
@@ -55,6 +60,9 @@
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
   color: #000000;
 }
+
+/* Bottom Mobile Navigation */
+
 
 /* Mobile Navigation */
 
@@ -91,6 +99,7 @@
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 0;
+  /* width: 50vw; */
 }
 
 .mobile-nav * {
@@ -201,17 +210,19 @@
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
- #projects {
+
+#projects {
   background: rgb(255, 255, 254);
   color: #13547a;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
 
-  .container {
-    position: relative;
-    z-index: 10;
-  }
+.container {
+  position: relative;
+  z-index: 10;
+}
+
 /*
   .deck{
     position: relative;
@@ -286,24 +297,26 @@
     margin-right: auto;
     text-align: center;
     color:#000;}  */
-    .head-line{
-      font-size: 20px;
-      text-align: center;
-      border-bottom: #13547a solid 3px;
-    }
-    /* .inner-deck{
+
+.head-line {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: #13547a solid 3px;
+}
+
+/* .inner-deck{
       display: block;
       overflow: hidden;
       margin: 0 auto;
     } */
-      /* .projects-deck img{
+
+/* .projects-deck img{
           width: 480px;
           height: 210px;
         
         
       }  */
-    
-  
+
 /* .inner-deck{
   position: absolute;
   width: 100%;
@@ -319,11 +332,12 @@
 	height: 18rem;
 
 } */
-.glide__slide img{
+
+.glide__slide img {
   width: 100%;
 }
 
-.glide__slide{
+.glide__slide {
   filter: blur(2px);
   opacity: .9;
   transition: .3s linear;
@@ -334,7 +348,7 @@
   padding-bottom: 20px;
 }
 
-.glide__slide--active{
+.glide__slide--active {
   opacity: 1;
   filter: none;
   transform: scale(1.1);

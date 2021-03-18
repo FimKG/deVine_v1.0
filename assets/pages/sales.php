@@ -43,14 +43,12 @@
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
                             <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/sales">Vehicle On Sale</a></li>
+                            <li><a href="#vehicles">Vehicle On Sale</a></li>
                         </ul>
                     </nav>
-                    
-                           
 
                 </div>
-                 <a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
+                 <a href="/#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
             </div>
             <!-- <div class="hr-header"></div> -->
         </div>
@@ -60,7 +58,7 @@
 
     <main id="main">
         <!-- ======= Services Section ======= -->
-        <section id="services" class="section-bg">
+        <section id="vehicles" class="section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">

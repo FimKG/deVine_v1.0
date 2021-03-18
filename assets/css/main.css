@@ -52,7 +52,7 @@ h6 {
 }
 
 #header .logo {
-  margin: 0;
+  margin: auto;
   line-height: 1;
   letter-spacing: 3px;
 }
@@ -151,9 +151,17 @@ h6 {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media (max-height: 500px) {
+@media (max-width: 500px) {
+  .carousel-item img {
+    width: 100px;
+  }
   #intro {
-    height: 150vh;
+    width: 100vw;
+  }
+  #header {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
   }
 }
 
@@ -253,7 +261,7 @@ h6 {
 /*--------------------------------------------------------------
 # animate keyframes
 --------------------------------------------------------------*/
-@-webkit-keyframes animate-loading {
+@-webkit-keyframes animate-preloader {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -264,7 +272,7 @@ h6 {
   }
 }
 
-@keyframes animate-loading {
+@keyframes animate-preloader {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -587,7 +595,7 @@ footer .right-block {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fffffe;
+  background: #ececec;
 }
 
 #preloader::before {
@@ -595,29 +603,27 @@ footer .right-block {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #05352f;
+  border: 10px solid #f2f2f2;
+  -o-border-image: linear-gradient(15deg, #65adda 0%, #05352f 100%);
+     border-image: linear-gradient(15deg, #65adda 0%, #05352f 100%);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
 
 .img-preloader {
-  display: block;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 200px;
-  height: 200px;
-  margin: -100px 0 0 -100px;
-  z-index: 1001;
+  position: fixed;
+  top: calc(40% - 30px);
+  left: calc(47% - 30px);
+  width: 500px;
+  height: 500px;
   background-image: url("../imgs/logo/Devine Auto logo.png");
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  z-index: 1020;
+  z-index: 1000;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
 }
 
 /* Back to top button */

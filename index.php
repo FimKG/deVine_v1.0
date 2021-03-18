@@ -34,7 +34,7 @@
 
 <body>
 
-    <!-- ======= Header ======= -->
+    <!-- ======= Header =======fixed-top -->
     <header id="header" class="fixed-top header-transparent">
         <div class="container-fluid">
 
@@ -51,11 +51,11 @@
                             <li><a href="#hire">Hybrid Batteries</a></li>
                             <li><a href="assets/pages/sales.php">Vehicle On Sale</a></li>
                             <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a></li>
                         </ul>
                     </nav>
 
                 </div>
-                <a href="#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
             </div>
             <!-- <div class="hr-header"></div> -->
         </div>
@@ -574,7 +574,7 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <div id="preloader">
-        <!-- <div class="img-preloader"></div> -->
+        <div class="img-preloader"></div>
     </div>
 
     <!-- layout-design JS Files -->
