@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -391,7 +390,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-form-field="Message" />
-                                             <!-- <span class="status"></span> -->
+                                            <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-form-field="Message" />

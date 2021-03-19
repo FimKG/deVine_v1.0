@@ -5,8 +5,6 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'template_email.php';
 
-//echo file_get_contents('php://input');
-
 // $status = '';
 $name = '';
 $email = '';
@@ -72,23 +70,6 @@ if ($message === '') {
     echo "Message cannot be empty.";
 }
 
-// print_r($_POST);
-
-// echo '<pre>'.var_dump($_POST).'</pre>';
-
-// echo "checking data: ".
-// $name. '-' .
-// $email. '-' .
-// $phone. '-' .
-// $model. '-' .
-// $regNo. '-' .
-// $year. '-' .
-// $filedamage. '-' .
-// $filecar. '-' .
-// $message. '-' .
-// $subject. '-' ;
-
-
 require_once "PHPMailer/PHPMailer.php";
 require_once "PHPMailer/SMTP.php";
 require_once "PHPMailer/Exception.php";
@@ -96,7 +77,7 @@ require_once "PHPMailer/Exception.php";
 
 $mail = new PHPMailer(true);
 try {
-    $mail->SMTPDebug = 2; // Enable verbose debug output
+    // $mail->SMTPDebug = 2; // Enable verbose debug output
     $mail->isSMTP();
     $mail->Host = "mail.dvtech.co.za";
     $mail->SMTPAuth = true;
@@ -123,15 +104,13 @@ try {
     // ====== Content ======
     $mail->isHTML(true);
     $mail->setFrom("noreply@dvtech.co.za");
-    // $mail->setFrom("Devine Auto <noreply@dvtech.co.za>");
-    $mail->addAddress("molotoka@dvtech.co.za");
+    $mail->addAddress("mokoenal@dvtech.co.za");
     // $mail->addAddress("mokoenal@dvtech.co.za");
     $mail->Subject = ("$email($subject)");
     $mail->Body = renderMessage($email, $message, $phone, $name, $model, $regNo, $year, $subject);
 
     $mail->send();
-    // echo "Email sent!" . $email . "Name: " . $name;
-   echo "Email sent!";
+    echo "Email sent!";
     // $status = "Email sent!";
 
 } catch (Exception $e) {

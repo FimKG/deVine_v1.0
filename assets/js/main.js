@@ -80,8 +80,10 @@ $("#contact-form").on("submit", function (event) {
     formData.append("model", $("input[name=model]").val());
     formData.append("regNo", $("input[name=regNo]").val());
     formData.append("year", $("input[name=year]").val());
-    formData.append("filecar", filecar);
-    formData.append("filedamage", filedamage);
+    for (let i = 0; i < filecar.length; i++)
+      formData.append("filecar[]", filecar.item(i));
+    for (let i = 0; i < filedamage.length; i++)
+      formData.append("filedamage[]", filedamage.item(i));
     formData.append("message", $("textarea[name=message]").val());
 
     // document.getElementById('status').innerHTML = "Sending...";
@@ -105,9 +107,9 @@ $("#contact-form").on("submit", function (event) {
         $("button#btnSend").button("Loding..");
       },
       success: function (data, response, jqXHR) {
-        console.log("response: ========", response);
-        console.log("data: ========", data);
-        console.log("jqXHR: ========", jqXHR);
+        // console.log("response: ========", response);
+        // console.log("data: ========", data);
+        // console.log("jqXHR: ========", jqXHR);
         $(".status").remove();
       },
       error: function (errorThrown, response, jqXHR) {
