@@ -1,61 +1,3 @@
-var onFilePicked = function(event) {
-    var input = event.target;
-
-    var file = input.files[0];
-    console.log(file.name);
-  };
-
-
-      function handleFiles() {
-        if (filecar.files.length > 0) {
-            for (const i = 0; i <= filecar.files.length - 1; i++) {
-                const fsize = filecar.files.item(i).size;
-                const file = Math.round((fsize / 1024));
-                // The size of the file. 
-                if (file >= 4096) {
-                    alert(
-                        "File too Big, please select a file less than 4mb");
-                } else if (file < 0) {
-                    alert(
-                        "File too small, please select a different file");
-                } else {
-                    document.getElementById('up_filecar').innerHTML = '<b>'
-                        + file + '</b> KB';
-                }
-            }
-        }
-        console.log(" - ", file);
-        // const selectedFiles = this.files; /* now you can work with the file list */
-        // console.log(selectedFiles);
-    }
-
-    
-<?php
-   if(isset($_FILES['image'])){
-      $errors= array();
-      $file_name = $_FILES['image']['name'];
-      $file_size = $_FILES['image']['size'];
-      $file_tmp = $_FILES['image']['tmp_name'];
-      $file_type = $_FILES['image']['type'];
-      $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
-      
-      $expensions= array("jpeg","jpg","png","pdf");
-      
-      if(in_array($file_ext,$expensions)=== false){
-         $errors[]="extension not allowed, please choose a PDF, JPEG or PNG file.";
-      }
-      
-      if($file_size > 4194304) {
-         $errors[]='File size must be excately 4 MB';
-      }
-      
-      if(empty($errors)==true) {
-         move_uploaded_file($file_tmp,"uploads/".$file_name); //The folder where you would like your file to be saved
-         echo "Success";
-      }else{
-         print_r($errors);
-      }
-   }
 
 // PHPMailer script below
 
@@ -97,3 +39,78 @@ exit;
 
 echo "<script>alert('Message has been sent')</script>";
 ?>
+
+
+
+<div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <!-- <div class="row no-gutters"> -->
+                                <div class="pic">
+                                    <img src="assets/imgs/S1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="member-info">
+                                    <div class="card-body">
+                                        <h5 class="card-titl">Engine Overhaul</h5>
+                                        <p class="social">From the brake pedal to hydraulic
+                                            brake fluid, our technicians can
+                                            perform brake repair on any make
+                                            and model.</p>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="card">
+                            <!-- <div class="row no-gutters"> -->
+                                <div class="pic">
+                                    <img src="assets/imgs/S2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-titl">We Put All Together</h5>
+                                        <p class="social">From the brake pedal to hydraulic
+                                            brake fluid, our technicians can
+                                            perform brake repair on any make
+                                            and model.</p>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <!-- <div class="row no-gutters"> -->
+                                <div class="pic">
+                                    <img src="assets/imgs/S3.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-titl">Panel Beating</h5>
+                                        <p class="social">From the brake pedal to hydraulic
+                                            brake fluid, our technicians can
+                                            perform brake repair on any make
+                                            and model.</p>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="card">
+                            <!-- <div class="row no-gutters"> -->
+                                <div class="pic">
+                                    <img src="assets/imgs/S4.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-titl">Spray Painting</h5>
+                                        <p class="social">From the brake pedal to hydraulic
+                                            brake fluid, our technicians can
+                                            perform brake repair on any make
+                                            and model.</p>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </div> 

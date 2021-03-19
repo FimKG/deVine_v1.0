@@ -4,16 +4,6 @@
 
 /*-- Google Fonts --*/
 
-/* #preloader .img-preloader::after {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  background-image: url('assets/imgs/logo/Devine Auto logo.png');
-  width: 60px;
-  height: 60px;
-} */
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -223,6 +213,39 @@
   position: relative;
   z-index: 10;
 }
+.head-line {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: #13547a solid 3px;
+}
+
+.proj-info {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -50px;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: #8d9dac;
+  padding: 15px 20px;
+}
+
+.proj-info h4 {
+  font-size: 18px;
+  color: rgb(224, 18, 18);
+  font-weight: 600;
+}
+
+.proj-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
 
 /*
   .deck{
@@ -299,11 +322,7 @@
     text-align: center;
     color:#000;}  */
 
-.head-line {
-  font-size: 20px;
-  text-align: center;
-  border-bottom: #13547a solid 3px;
-}
+
 
 /* .inner-deck{
       display: block;

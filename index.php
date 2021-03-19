@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +40,7 @@
         <div class="container-fluid">
 
             <div class="row justify-content-center">
-                <div class="col-xl-24 d-flex align-items-center">
+                <div class="col-xl-8 d-flex align-items-center">
                     <a href="#" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
@@ -254,7 +255,7 @@
 
                 <p class="head-line">Our previous Clients</p>
 
-                <div class="images glide">
+                <div class="project-card glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="glide__slide">
@@ -267,6 +268,12 @@
                                             <h5 class="card-title">BEFORE &amp; AFTER</h5>
                                             <p class="card-text">At our car repair center, you can also buy any accessories you
                                                 need for your vehicle, including car tires and filters.</p>
+                                        </div>
+                                        <div class="proj-info">
+
+                                            <h4 class="client-names">Names</h4>
+                                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +384,6 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" data-form-field="Message" />
                                             <!-- <span class="status"></span> -->
-                                            <!-- <label for="name" class="animated-label">Your Name</label> -->
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-form-field="Message" />
@@ -385,8 +391,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-form-field="Message" />
-                                            <!-- pattern="^\d{10}$" required -->
-                                            <!-- <span class="status"></span> -->
+                                             <!-- <span class="status"></span> -->
                                         </div>
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-form-field="Message" />
@@ -444,12 +449,7 @@
 
                                     <div class="submit">
                                         <span class="status"></span>
-                                        <?php //echo $status; 
-                                        ?>
-                                        <?php //echo $statusMsg; 
-                                        ?>
-                                        <!-- <div id="success" class="alert alert-danger"> <?php //echo $errors; 
-                                                                                            ?></div> -->
+                                        <!-- <div id="success" class="alert alert-danger"> </div> -->
                                         <button class="btn btn-primary btn-block" id="btnSend">Send
                                             <!-- <span id="btnSend"></span> -->
                                             <!-- <span id="status"></span> -->

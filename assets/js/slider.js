@@ -119,7 +119,7 @@
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu">Menu</i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function (e) {
@@ -210,34 +210,7 @@
     aos_init();
   });
 
-  //   // Maps
-  //   function initMap() {
-
-  //     var location = new google.maps.LatLng(50.0875726, 14.4189987);
-
-  //     var mapCanvas = document.getElementById('map');
-  //     var mapOptions = {
-  //         center: location,
-  //         zoom: 16,
-  //         panControl: false,
-  //         mapTypeId: google.maps.MapTypeId.ROADMAP
-  //     }
-  //     var map = new google.maps.Map(mapCanvas, mapOptions);
-
-  // }
-
-  // google.maps.event.addDomListener(window, 'load', initMap);
-
-  // $( '.js-input' ).keyup(function() {
-  //   if( $(this).val() ) {
-  //      $(this).addClass('not-empty');
-  //   } else {
-  //      $(this).removeClass('not-empty');
-  //   }
-  // });
-
-
-  new Glide(".images",{
+  new Glide(".project-card",{
     type: 'carousel',
     perView: 3,
     focusAt: 'center',

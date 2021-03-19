@@ -318,3 +318,19 @@ var files2Uploader = $("#up_filedamage").fileUploader(filesToUpload, "up_filedam
 //             }        
 //         });
 //     });		
+
+
+
+// var formData = new FormData();
+// formData.append("name", $("input[name=name]").val());
+// formData.append("email", $("input[name=email]").val());
+// formData.append("phone", $("input[name=phone]").val());
+// formData.append("subject", $("input[name=subject]").val());
+// formData.append("model", $("input[name=model]").val());
+// formData.append("regNo", $("input[name=regNo]").val());
+// formData.append("year", $("input[name=year]").val());
+// for (let i = 0; i < filecar.length; i++)
+//   formData.append("filecar", filecar.item(i));
+// for (let i = 0; i < filedamage.length; i++)
+//   formData.append("filedamage", filedamage.item(i));
+// formData.append("message", $("textarea[name=message]").val());
