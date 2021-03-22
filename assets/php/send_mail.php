@@ -82,7 +82,7 @@ try {
     $mail->Host = "mail.dvtech.co.za";
     $mail->SMTPAuth = true;
     $mail->Username = "noreply@dvtech.co.za";
-    $mail->Password = "Devauto@123";
+    $mail->Password = "Devau@123";
     $mail->Port = 25;
     $mail->SMTPSecure = "tls";
     $mail->SMTPOptions = array(
@@ -104,8 +104,8 @@ try {
     // ====== Content ======
     $mail->isHTML(true);
     $mail->setFrom("noreply@dvtech.co.za");
+    // $mail->addAddress("molotoka@dvtech.co.za");
     $mail->addAddress("mokoenal@dvtech.co.za");
-    // $mail->addAddress("mokoenal@dvtech.co.za");
     $mail->Subject = ("$email($subject)");
     $mail->Body = renderMessage($email, $message, $phone, $name, $model, $regNo, $year, $subject);
 

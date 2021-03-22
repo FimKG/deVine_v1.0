@@ -39,7 +39,7 @@
         <div class="container-fluid">
 
             <div class="row justify-content-center">
-                <div class="col-xl-8 d-flex align-items-center">
+                <div class="col-xl-12 d-flex align-items-center">
                     <a href="#" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
