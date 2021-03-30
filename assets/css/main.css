@@ -2,7 +2,6 @@
 # Google Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("");
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -339,6 +338,36 @@ section {
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
+.card-body h5 {
+  font-size: 18px;
+  color: #ff0101;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.card-body h5::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #dddddd;
+  bottom: 1px;
+  left: calc(20% - 60px);
+}
+
+.card-body h5::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #ff0101;
+  bottom: 0;
+  left: calc(20% - 20px);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/

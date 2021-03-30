@@ -40,11 +40,17 @@
 .nav-menu a {
   display: block;
   position: relative;
-  color: rgb(231, 245, 243) ;
+  color: rgb(231, 245, 243);
   transition: 0.3s;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
+}
+.nav-menu span{
+  display: block;
+  position: relative;
+  font-weight: 600;
+  font-size: large;
 }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
@@ -218,139 +224,45 @@
   border-bottom: #13547a solid 3px;
 }
 
-.proj-info {
-  opacity: 0;
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  bottom: -50px;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: #8d9dac;
-  padding: 15px 20px;
+.card-deck {
+  background-color: transparent;
+  width: 300px;
+  height: 550px;
+  perspective: 1000px;
 }
 
-.proj-info h4 {
-  font-size: 18px;
-  color: rgb(224, 18, 18);
-  font-weight: 600;
+.projects-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-.proj-info .details-link {
-  position: absolute;
-  right: 50px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: white;
-  transition: ease-in-out 0.3s;
+.card-deck:hover .projects-card-inner {
+  transform: rotateY(180deg);
 }
 
-
-/*
-  .deck{
-    position: relative;
-    width: 754px;
-    height: 500px;
-    margin: 115px auto 0;
-  }
-  .deck-prev, .deck-next{
-    position: absolute; 
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #13547a;
-    color: white;
-    transition: all 0.7s;
-    font-size: 20px;
-    font-weight: bold; 
-    border-radius: 100%;
-  }
-  .deck-prev:hover, .deck-next:hover{
-    opacity: 1;
-    background: rgb(172, 172, 172);
-    color: black;
-  }
-  .deck .deck-prev{
-    left: -70px;
-  }
-  .deck .deck-next{
-    right: -70px;
-  }
-  .deck .deck-prev::before{
-    content: '<';
-  }
-  .deck .deck-next::after{
-    content: '>';
-  }
-  .deck > ul{
-    list-style: none;
-    position: relative;
-    width: 754px;
-    height: 292px;
-    margin: 0;
-    padding: 0;
-  }
-  .deck > ul > li{
-    list-style: none;
-    position: relative;
-    width: 754px;
-    height: 292px;
-    margin: 0;
-    padding: 0;
-    height: 0;
-    width: 0;
-    border: 3px solid #B4FF00;
-    cursor: pointer;
-  }
-  .deck > ul > li > img{
-    background-position: center;
-    width: 754px;
-    height: 292px;
-    object-fit: cover;
-    border-radius: 4px 4px 0 0;
-  }
-  
-
-   .slider-deck{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color:#000;}  */
-
-
-
-/* .inner-deck{
-      display: block;
-      overflow: hidden;
-      margin: 0 auto;
-    } */
-
-/* .projects-deck img{
-          width: 480px;
-          height: 210px;
-        
-        
-      }  */
-
-/* .inner-deck{
+.projects-card-front, .proj-info-back {
   position: absolute;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.inner-deck .projects-deck{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 14rem;
-	height: 18rem;
-
+/* .projects-card-front {
 } */
+
+.proj-info-back {
+  background-color: rgb(247, 247, 247);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+.proj-info-back p{
+line-height: 1pt;
+}
 
 .glide__slide img {
   width: 100%;
@@ -361,10 +273,9 @@
   opacity: .9;
   transition: .3s linear;
   overflow: visible;
-  /* width: 754px; */
-  /* height: 600px; */
   padding-top: 25px;
   padding-bottom: 20px;
+  perspective: 1000px;
 }
 
 .glide__slide--active {
@@ -372,12 +283,6 @@
   filter: none;
   transform: scale(1.1);
 }
-
-/* .glide__slides{
-  overflow: visible;
-   width: 754px; 
-  height: 600px;
-} */
 
 /*--------------------------------------------------------------
 # Services Section

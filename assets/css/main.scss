@@ -2,7 +2,7 @@
 # Google Fonts
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url('');
+// @import url('https://fonts.googleapis.com/css2?family=Material+Icons');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -322,7 +322,7 @@ section {
 }
 
 .section-bg {
-  background: #f7f7f7;
+  background: rgb(247, 247, 247);
 }
 
 /*--------------------------------------------------------------
@@ -370,7 +370,36 @@ section {
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
+.card-body {
+  h5 {
+    font-size: 18px;
+    color: rgb(255, 1, 1);
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: rgb(221, 221, 221);
+      bottom: 1px;
+      left: calc(20% - 60px);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: rgb(255, 1, 1);
+      bottom: 0;
+      left: calc(20% - 20px);
+    }
+  }
 
+}
 // #projects {
   // background: rgb(255, 255, 254);
   // color: #13547a;
