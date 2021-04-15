@@ -46,7 +46,8 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-.nav-menu span{
+
+.nav-menu span {
   display: block;
   position: relative;
   font-weight: 600;
@@ -58,7 +59,6 @@
 }
 
 /* Bottom Mobile Navigation */
-
 
 /* Mobile Navigation */
 
@@ -206,7 +206,7 @@
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
-
+/* 
 #projects {
   background: rgb(255, 255, 254);
   color: #13547a;
@@ -218,6 +218,7 @@
   position: relative;
   z-index: 10;
 }
+
 .head-line {
   font-size: 20px;
   text-align: center;
@@ -237,12 +238,13 @@
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  transform-origin: center;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-.card-deck:hover .projects-card-inner {
+/ .card-deck:hover .projects-card-inner {
   transform: rotateY(180deg);
-}
+} /
 
 .projects-card-front, .proj-info-back {
   position: absolute;
@@ -252,16 +254,27 @@
   backface-visibility: hidden;
 }
 
-/* .projects-card-front {
-} */
+.projects-card-inner.is-flipped {
+  transform: rotateY(-180deg);
+}
+
+/ .projects-card-front {
+  transform: rotateY(180deg);
+} /
 
 .proj-info-back {
   background-color: rgb(247, 247, 247);
   color: rgb(0, 0, 0);
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg) ;
+  padding: 20px;
 }
-.proj-info-back p{
-line-height: 1pt;
+
+.proj-info-back .client-header{
+  border-bottom: #13547a solid 2px;
+}
+
+.proj-info-back p {
+  line-height: 1pt;
 }
 
 .glide__slide img {
@@ -284,6 +297,11 @@ line-height: 1pt;
   transform: scale(1.1);
 }
 
+.glide__arrows button {
+  color: #B4FF00;
+  background-color: #13547a;
+} */
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -295,6 +313,11 @@ line-height: 1pt;
 /*--------------------------------------------------------------
 # animate keyframes
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Sales.php
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Footer

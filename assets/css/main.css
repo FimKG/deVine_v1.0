@@ -78,7 +78,8 @@ h6 {
   font-size: 20px;
 }
 
-.btn-request-qoute, .btn-qoute-scroll {
+.btn-request-qoute,
+.btn-qoute-scroll {
   background-color: #707070;
   font-size: 18px;
   color: #e7f5f3;
@@ -179,6 +180,58 @@ h6 {
   }
   .address {
     padding-top: 30px;
+  }
+  /* .projects-card-front {
+  transform: rotateY(180deg);
+} */
+  .card-deck {
+    background-color: transparent;
+    width: 300px;
+    height: 550px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  .card-deck:hover .projects-card-inner {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .projects-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  .projects-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .proj-info-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #f7f7f7;
+    color: black;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    padding: 20px;
+  }
+  .projects-card-inner.is-flipped {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
   }
 }
 
@@ -338,6 +391,24 @@ section {
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
+#projects {
+  background: #fffffe;
+  color: #13547a;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+}
+
+.head-line {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: #13547a solid 3px;
+}
+
 .card-body h5 {
   font-size: 18px;
   color: #ff0101;
@@ -366,6 +437,95 @@ section {
   background: #ff0101;
   bottom: 0;
   left: calc(20% - 20px);
+}
+
+.card-deck {
+  background-color: transparent;
+  width: 300px;
+  height: 550px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card-deck:hover .projects-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.projects-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.projects-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.proj-info-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #f7f7f7;
+  color: black;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  padding: 20px;
+}
+
+.proj-info-back .client-header {
+  border-bottom: #13547a solid 2px;
+}
+
+.projects-card-inner.is-flipped {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.glide__slide {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  opacity: 0.9;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  overflow: visible;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.glide__slide img {
+  width: 100%;
+}
+
+.glide__slide--active {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.glide__arrows button {
+  color: #b4ff00;
+  background-color: #13547a;
 }
 
 /*--------------------------------------------------------------
@@ -401,8 +561,8 @@ section {
   font-size: 25px;
 }
 
-#services .card .services-card {
-  background-color: #868e96;
+#services .services-card .card-img-top {
+  height: 195px;
 }
 
 /*--------------------------------------------------------------
@@ -506,6 +666,73 @@ textarea .message {
   height: 368px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--------------------------------------------------------------
+# Sales.php
+--------------------------------------------------------------*/
+.used-car-specials a {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  display: block;
+  margin-bottom: 10px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.used-car-specials a img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  height: 180px;
+  float: left;
+}
+
+.used-car-specials a .car-name {
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 100px;
+  color: #ff0101;
+}
+
+.used-car-specials a .car-info {
+  padding: 10px 60px 10px 10px;
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  padding-top: 0;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+
+.used-car-specials a .car-info span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.used-car-specials a .car-info span:before {
+  content: "R ";
+}
+
+.used-car-specials a .car-info .vat {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.used-car-specials a .car-info p {
+  margin: 0;
+}
+
+.used-car-specials a:hover {
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23), 0 10px 30px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.23), 0 10px 30px rgba(0, 0, 0, 0.19);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 /*--------------------------------------------------------------

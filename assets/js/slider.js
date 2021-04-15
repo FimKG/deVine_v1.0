@@ -7,7 +7,7 @@
   // Preloader
   $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
+      $('#preloader').delay(20).fadeOut('slow', function () {
         $(this).remove();
       });
     }
@@ -58,15 +58,10 @@
       return false;
     });
 
-    // img project clicked
-    // $('.glide__slide--active').click(function () {
-    //   $('html, body').animate({
-    //     scrollTop: 2100
-    //   }, 1500, 'easeInOutExpo');
-    //   return false;
-    // });
-
-
+    var card = document.querySelector('.projects-card-inner');
+    card.addEventListener( 'click', function() {
+      card.classList.toggle('is-flipped');
+    });
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 17;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
@@ -217,10 +212,10 @@
     gap: 40,
     breakpoints: {
       1200:{
-        perView: 3
+        perView: 2
       },
       800:{
-        perView: 2
+        perView: 1.2
       }
     }
   }).mount();

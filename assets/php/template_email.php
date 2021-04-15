@@ -375,7 +375,7 @@ footer .right-block {
                                 <div class="row justify-content-center">
                                     <div class="col-xl-11 d-flex align-items-center">
                                         <a href="index.html" class="logo mr-auto">
-                                            <img src="https://dvauto.dvtech.co.za/assets/imgs/logo/Devine%20Auto%20logo.png" alt=""
+                                            <img data-src="https://dvauto.dvtech.co.za/assets/imgs/logo/Devine%20Auto%20logo.png" alt=""
                                                 class="img-fluid"></a>
 
                                         <nav class="nav-menu d-none ">
@@ -452,7 +452,7 @@ footer .right-block {
                                     <div class="right-block">
                                         <div class="footer-logo">
                                             <a href="https://dvauto.dvtech.co.za/" class="logo2">
-                                                <img src="https://dvauto.dvtech.co.za/assets/imgs/logo/Devine%20Auto%20logo.png" alt=""
+                                                <img data-src="https://dvauto.dvtech.co.za/assets/imgs/logo/Devine%20Auto%20logo.png" alt=""
                                                     class="img-responsive">
                                             </a>
                                         </div>

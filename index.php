@@ -36,12 +36,12 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-xl-12 d-flex align-items-center">
-                    <a href="#" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
+                    <a href="/" class="logo mr-auto"><img src="assets/imgs/logo/Devine Auto logo.png" alt="" class="img-fluid" /></a>
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
                             <li class="active">
-                                <span class="fa fa-home" aria-hidden="true"></span>
+                                <!-- <span class="fa fa-home" aria-hidden="true"></span> -->
                                 <a href="/">Home</a>
                             </li>
                             <li><a href="#services">Services</a></li>
@@ -142,7 +142,7 @@
 
                 <div class="row">
 
-                    <div class="col-lg-6">
+                    <div class="col-sm-6 col-md-4 col-lg-6">
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
@@ -160,14 +160,18 @@
                             </div>
                         </div>
 
+
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-6">
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S2.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S1.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
-                                        <h5 class="card-title">We Put All Together</h5>
+                                        <h5 class="card-title">Engine Overhaul</h5>
                                         <p class="card-text">From the brake pedal to hydraulic
                                             brake fluid, our technicians can
                                             perform brake repair on any make
@@ -176,18 +180,19 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
-
-                    <div class="col-lg-6">
+                    <div class="col-sm-6 col-md-4 col-lg-6">
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S3.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S1.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
-                                        <h5 class="card-title">Panel Beating</h5>
+                                        <h5 class="card-title">Engine Overhaul</h5>
                                         <p class="card-text">From the brake pedal to hydraulic
                                             brake fluid, our technicians can
                                             perform brake repair on any make
@@ -197,14 +202,18 @@
                             </div>
                         </div>
 
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-6">
                         <div class="card">
                             <div class="row no-gutters">
                                 <div class="col-sm-5 services-card">
-                                    <img src="assets/imgs/S4.jpg" class="card-img-top " alt="">
+                                    <img src="assets/imgs/S1.jpg" class="card-img-top " alt="">
                                 </div>
                                 <div class="col-sm-7">
                                     <div class="card-body">
-                                        <h5 class="card-title">Spray Painting</h5>
+                                        <h5 class="card-title">Engine Overhaul</h5>
                                         <p class="card-text">From the brake pedal to hydraulic
                                             brake fluid, our technicians can
                                             perform brake repair on any make
@@ -213,6 +222,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
 
@@ -251,6 +262,8 @@
                                         </div>
                                         <div class="proj-info-back">
                                             <h3 class="client-header">Successful Clients</h3>
+                                            <p>Clients Name: </p>
+                                            <p>Location: Gauteng</p>
                                             <p>Clients Name: </p>
                                             <p>Location: Gauteng</p>
                                         </div>

@@ -11,19 +11,12 @@
 
     <!-- Favicons -->
     <link href="../imgs/logo/Devine Auto logo.png" rel="icon">
-
     <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
 
     <!-- layout-design CSS Files -->
-    <link href="../layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../layout-design/icofont/icofont.min.css" rel="stylesheet">
-    <link href="../layout-design/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../layout-design/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../layout-design/animate.css/animate.min.css" rel="stylesheet">
-    <link href="../layout-design/owl.carousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="../layout-design/aos/aos.css" rel="stylesheet">
 
+    <link href="../layout-design/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../layout-design/animate.css/animate.min.css" rel="stylesheet">
     <!-- Main CSS File -->
     <link href="../css/main-nav.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
@@ -38,7 +31,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-xl-24 d-flex align-items-center">
-                    <a href="#" class="logo mr-auto"><img src="../imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
+                    <a href="/" class="logo mr-auto"><img src="../imgs/logo/Devine Auto logo.png" alt="" class="img-fluid"></a>
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
@@ -48,32 +41,177 @@
                     </nav>
 
                 </div>
-                 <a href="/#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
+                <a href="/#contact" class="btn-qoute-scroll animate__animated animate__fadeInUp">Request Qoute</a>
             </div>
             <!-- <div class="hr-header"></div> -->
         </div>
     </header>
 
-    
 
-    <main id="main">
-        <!-- ======= Services Section ======= -->
-        <section id="vehicles" class="section-bg">
-            <div class="container" data-aos="fade-up">
 
-                <div class="section-header">
-                    <h3>Our Services</h3>
-                </div>
-                <div class="pb-5"></div>
+    <!-- <main id="main"> -->
+    <!-- ======= Services Section ======= -->
+    <div id="vehicles" class="section-bg">
+        <div class="container" data-aos="fade-up">
 
-                
-
+            <div class="section-header">
+                <h3>Car Sales</h3>
             </div>
-        </section><!-- End Services Section -->
+            <div class="pb-5"></div>
+            <!-- <div class="card-deck">
+                <div class="card projects-card">
+                    <img src="..//imgs/repaired/Picture2.png" alt="" class="img-responsive">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Corolla </h5>
+                        <p class="card-text">R1,923</p>
+                        <h6 class="footer">Ex Tax: R1,923</h6>
+                    </div>
+                </div>
 
-        
 
-    </main><!-- End #main -->
+            </div> -->
+            <h1 class="title">New, Demo and Used Cars for sale</h1>
+            <div class="used-car-specials">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">BMW 3 Series</div>
+
+                            <img data-src="" class="" src="../imgs/cars/bmw-3-series-320i-luxury-line-auto-2015.jpg">
+                            <div class="car-info">
+                                <div>
+                                    <span>249990</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 151000</p>
+                                    <p>Year: 2015</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">Honda Brio</div>
+
+                            <img data-src="" class="" src="../imgs/cars/2018-Honda-BRIO-1.2-COMFORT-5DR-4.jpeg">
+                            <div class="car-info">
+                                <div>
+                                    <span>119900</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 52000</p>
+                                    <p>Year: 2018</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">Nissan Micra</div>
+
+                            <img data-src="" class="" src="../imgs/cars/nissan-micra-1-2-active-visia-2020.jpg">
+                            <div class="car-info">
+                                <div>
+                                    <span>147800</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 20000</p>
+                                    <p>Year: 2020</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">Hyundai H-100</div>
+
+                            <img data-src="" class="" src="../imgs/cars/Hyundai-H-100-Bakkie-2-6D-deck-aircon-2015-2019.jpg">
+                            <div class="car-info">
+                                <div>
+                                    <span>369900</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 8000</p>
+                                    <p>Year: 2021</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">BMW 3 Series</div>
+
+                            <img data-src="" class="" src="../imgs/cars/bmw-3-series-320i-luxury-line.jpg">
+                            <div class="car-info">
+                                <div>
+                                    <span>249990</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 151000</p>
+                                    <p>Year: 2015</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">Honda Brio</div>
+
+                            <img data-src="" class="" src="../imgs/cars/2018-Honda-BRIO-1.2-COMFORT.jpg">
+                            <div class="car-info">
+                                <div>
+                                    <span>119900</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 52000</p>
+                                    <p>Year: 2018</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">Nissan Micra</div>
+
+                            <img data-src="" class="" src="../imgs/cars/2020-Nissan-Micra-Active-3.jpeg">
+                            <div class="car-info">
+                                <div>
+                                    <span>147800</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 20000</p>
+                                    <p>Year: 2020</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="#">
+                            <div class="car-name">Hyundai H-100</div>
+
+                            <img data-src="" class="" src="../imgs/cars/2020-hyundai-h100-bakkie.jpg">
+                            <div class="car-info">
+                                <div>
+                                    <span>369900</span>
+                                    <p class="vat">Ex Tax: R1,558</p>
+                                    <p>Mileage: 8000</p>
+                                    <p>Year: 2021</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div><!-- End Services Section -->
+
+
+
+
 
     <!-- ======= Pre Footer ======= -->
     <section class="section-bg pre-bg">
@@ -162,18 +300,15 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <div id="preloader">
-        <!-- <div class="img-preloader"></div> -->
+        <div class="img-preloader"></div>
     </div>
 
+    <!-- layout-design JS Files ../ -->
+    <script src="../layout-design/glide.min.js"></script>
 
-
-    <!-- layout-design JS Files -->
     <script src="../layout-design/jquery/jquery.min.js"></script>
     <script src="../layout-design/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../layout-design/jquery.easing/jquery.easing.min.js"></script>
-    <script src="../layout-design/counterup/counterup.min.js"></script>
-    <script src="../layout-design/venobox/venobox.min.js"></script>
-    <script src="../layout-design/owl.carousel/owl.carousel.min.js"></script>
     <script src="../layout-design/aos/aos.js"></script>
 
     <!-- Main JS File -->
