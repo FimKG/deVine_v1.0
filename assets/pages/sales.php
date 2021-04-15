@@ -58,18 +58,7 @@
                 <h3>Car Sales</h3>
             </div>
             <div class="pb-5"></div>
-            <!-- <div class="card-deck">
-                <div class="card projects-card">
-                    <img src="..//imgs/repaired/Picture2.png" alt="" class="img-responsive">
-                    <div class="card-body">
-                        <h5 class="card-title">Toyota Corolla </h5>
-                        <p class="card-text">R1,923</p>
-                        <h6 class="footer">Ex Tax: R1,923</h6>
-                    </div>
-                </div>
-
-
-            </div> -->
+            
             <h1 class="title">New, Demo and Used Cars for sale</h1>
             <div class="used-car-specials">
                 <div class="row">
